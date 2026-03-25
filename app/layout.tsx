@@ -27,26 +27,6 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
     >
       <body className="relative flex min-h-screen w-full flex-col items-center bg-white px-20 py-10">
         <ThemeProvider>{children}</ThemeProvider>
-
-        {/* Teal Glow Background */}
-        <div
-          className="absolute inset-0 -z-10 dark:hidden"
-          style={{
-            backgroundImage: `
-              radial-gradient(125% 125% at 50% 90%, #ffffff 40%, #14b8a6 100%)
-            `,
-            backgroundSize: "100% 100%",
-          }}
-        />
-
-        {/* Emerald Void */}
-        <div
-          className="absolute inset-0 -z-10 not-dark:hidden"
-          style={{
-            background:
-              "radial-gradient(125% 125% at 50% 90%, #000000 40%, #072607 100%)",
-          }}
-        />
       </body>
     </html>
   )
