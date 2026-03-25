@@ -1,0 +1,23 @@
+{
+  "project_name": "portfolio",
+  "format_on_save": "on",
+  "code_actions_on_format": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
+  },
+  "tab_size": 2,
+  "language_servers": [
+    "!biome",
+    "!typescript-language-server",
+    "!vscode-css-language-server",
+    "!deno",
+    "...",
+  ],
+  "languages": {
+    "TSX": { "formatter": "prettier" },
+    "TypeScript": { "formatter": "prettier" },
+    "CSS": { "formatter": "prettier" },
+    "JSON": { "formatter": "prettier" },
+    "JSONC": { "formatter": "prettier" },
+  },
+}
