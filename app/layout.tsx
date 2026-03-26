@@ -28,7 +28,7 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
         nunitoSansHeading.variable
       )}
     >
-      <body className="relative min-h-screen w-full px-20 py-10">
+      <body className="relative min-h-screen w-full bg-background px-20 py-10 text-foreground">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

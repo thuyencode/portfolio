@@ -1,44 +1,42 @@
 {
-	"name": "portfolio",
-	"version": "0.0.1",
-	"type": "module",
-	"private": true,
-	"scripts": {
-		"dev": "bunx --bun next dev --turbopack",
-		"build": "bunx --bun next build",
-		"start": "bunx --bun next start",
-		"lint": "bunx --bun eslint",
-		"format": "bunx --bun prettier --write \"**/*.{ts,tsx}\"",
-		"typecheck": "bunx --bun tsc --noEmit"
-	},
-	"dependencies": {
-		"@base-ui/react": "^1.3.0",
-		"@radix-ui/react-tabs": "^1.1.13",
-		"class-variance-authority": "^0.7.1",
-		"clsx": "^2.1.1",
-		"lucide-react": "^1.7.0",
-		"next": "16.1.7",
-		"next-intl": "^4.8.3",
-		"next-themes": "^0.4.6",
-		"react": "^19.2.4",
-		"react-dom": "^19.2.4",
-		"shadcn": "^4.1.0",
-		"tailwind-merge": "^3.5.0",
-		"tw-animate-css": "^1.4.0"
-	},
-	"devDependencies": {
-		"@eslint/eslintrc": "^3",
-		"@tailwindcss/postcss": "^4.2.1",
-		"@types/node": "^25.5.0",
-		"@types/react": "^19.2.14",
-		"@types/react-dom": "^19.2.3",
-		"babel-plugin-react-compiler": "^1.0.0",
-		"eslint": "^9.39.4",
-		"eslint-config-next": "16.1.7",
-		"postcss": "^8",
-		"prettier": "^3.8.1",
-		"prettier-plugin-tailwindcss": "^0.7.2",
-		"tailwindcss": "^4.2.1",
-		"typescript": "^5.9.3"
-	}
+  "name": "portfolio",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bunx --bun next dev --turbopack",
+    "build": "bunx --bun next build",
+    "start": "bunx --bun next start",
+    "lint": "bunx --bun eslint",
+    "format": "bunx --bun prettier --write \"**/*.{ts,tsx}\"",
+    "typecheck": "bunx --bun tsc --noEmit"
+  },
+  "dependencies": {
+    "@heroui/react": "^3.0.1",
+    "@heroui/styles": "^3.0.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.7.0",
+    "next": "16.1.7",
+    "next-intl": "^4.8.3",
+    "next-themes": "^0.4.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.2.1",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.1.7",
+    "postcss": "^8",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3"
+  }
 }

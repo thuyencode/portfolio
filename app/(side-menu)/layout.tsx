@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@heroui/react"
 
 export default function SideMenuLayout({ children }: React.PropsWithChildren) {
   return (
