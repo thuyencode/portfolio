@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 
-export default function TopMenuLayout({ children }: React.PropsWithChildren) {
+export default function SideMenuLayout({ children }: React.PropsWithChildren) {
   return (
     <>
       <section className="absolute flex justify-between">
