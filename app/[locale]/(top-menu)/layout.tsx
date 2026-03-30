@@ -1,4 +1,4 @@
-import { LanguageSwitcher } from "@/components/language-switcher"
+import { LocaleChanger } from "@/components/locale-changer"
 import { NavLinks } from "@/components/nav-links"
 
 export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
@@ -10,7 +10,7 @@ export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
         </div>
 
         <div className="absolute right-0 rounded-3xl p-3">
-          <LanguageSwitcher />
+          <LocaleChanger />
         </div>
       </div>
 

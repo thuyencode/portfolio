@@ -1,14 +1,14 @@
 "use client"
 
-import { useLanguageSwitcher } from "@/hooks/use-language-switcher"
+import { useLocaleChanger } from "@/hooks/use-locale-changer"
 import { Button, Dropdown } from "@heroui/react"
 import { Locale, useLocale, useTranslations } from "next-intl"
 
-export function LanguageSwitcher() {
+export function LocaleChanger() {
   const t = useTranslations("component.LanguageSwitcher")
   const locale = useLocale()
-  const switchToEnglish = useLanguageSwitcher("en")
-  const switchToVietnamese = useLanguageSwitcher("vi")
+  const switchToEnglish = useLocaleChanger("en")
+  const switchToVietnamese = useLocaleChanger("vi")
 
   function getButtonLabel(locale: Locale) {
     const flagEmoji =
