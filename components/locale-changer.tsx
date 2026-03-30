@@ -2,14 +2,14 @@
 
 import { useLocaleChanger } from "@/hooks/use-locale-changer"
 import { Button, Dropdown } from "@heroui/react"
-import { Locale, useLocale, useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 export function LocaleChanger() {
   const t = useTranslations("component.LanguageSwitcher")
   const locale = useLocale()
   const switchLocale = useLocaleChanger()
 
-  function getButtonLabel(locale: Locale) {
+  function getButtonLabel() {
     const flagEmoji =
       {
         en: "🇬🇧",
@@ -26,7 +26,7 @@ export function LocaleChanger() {
   return (
     <Dropdown>
       <Button variant="primary" className="">
-        {getButtonLabel(locale)}
+        {getButtonLabel()}
       </Button>
 
       <Dropdown.Popover className="min-w-fit" placement="bottom">
