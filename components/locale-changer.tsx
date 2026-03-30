@@ -7,8 +7,7 @@ import { Locale, useLocale, useTranslations } from "next-intl"
 export function LocaleChanger() {
   const t = useTranslations("component.LanguageSwitcher")
   const locale = useLocale()
-  const switchToEnglish = useLocaleChanger("en")
-  const switchToVietnamese = useLocaleChanger("vi")
+  const switchLocale = useLocaleChanger()
 
   function getButtonLabel(locale: Locale) {
     const flagEmoji =
@@ -19,6 +18,10 @@ export function LocaleChanger() {
 
     return `${t(`languageCode.${locale}`)} ${flagEmoji}`
   }
+
+  const switchToEnglish = () => switchLocale("en")
+
+  const switchToVietnamese = () => switchLocale("vi")
 
   return (
     <Dropdown>
