@@ -2,6 +2,7 @@
 
 import { useLocaleChanger } from "@/hooks/use-locale-changer"
 import { Button, Dropdown } from "@heroui/react"
+import { motion } from "motion/react"
 import { useLocale, useTranslations } from "next-intl"
 
 export function LocaleChanger() {
@@ -10,11 +11,10 @@ export function LocaleChanger() {
   const switchLocale = useLocaleChanger()
 
   function getButtonLabel() {
-    const flagEmoji =
-      {
-        en: "🇬🇧",
-        vi: "🇻🇳",
-      }[locale] || "🌐"
+    const flagEmoji = {
+      en: "🇬🇧",
+      vi: "🇻🇳",
+    }[locale]
 
     return flagEmoji
   }
@@ -26,7 +26,15 @@ export function LocaleChanger() {
   return (
     <Dropdown>
       <Button variant="primary">
-        {getButtonLabel()}
+        <motion.span
+          key={locale}
+          initial={{ rotateY: 90 }}
+          animate={{ rotateY: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+        >
+          {getButtonLabel()}
+        </motion.span>
+
         <span className="sr-only">{t(`languageCode.${locale}`)}</span>
       </Button>
 

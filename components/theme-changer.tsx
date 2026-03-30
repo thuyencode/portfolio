@@ -40,6 +40,7 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
               initial={{ scale: 0, rotate: 90 }}
               animate={{ scale: 1, rotate: 0 }}
               exit={{ scale: 0, rotate: -90 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
             />
           ) : (
             <SunIconWithMotion
@@ -47,6 +48,7 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
               initial={{ scale: 0, rotate: 90 }}
               animate={{ scale: 1, rotate: 0 }}
               exit={{ scale: 0, rotate: -90 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
             />
           )}
         </AnimatePresence>
