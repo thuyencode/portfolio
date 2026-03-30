@@ -16,7 +16,7 @@ export function LocaleChanger() {
         vi: "🇻🇳",
       }[locale] || "🌐"
 
-    return `${t(`languageCode.${locale}`)} ${flagEmoji}`
+    return flagEmoji
   }
 
   const switchToEnglish = () => switchLocale("en")
@@ -25,8 +25,9 @@ export function LocaleChanger() {
 
   return (
     <Dropdown>
-      <Button variant="primary" className="">
+      <Button variant="primary">
         {getButtonLabel()}
+        <span className="sr-only">{t(`languageCode.${locale}`)}</span>
       </Button>
 
       <Dropdown.Popover className="min-w-fit" placement="bottom">
