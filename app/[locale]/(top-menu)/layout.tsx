@@ -1,5 +1,7 @@
 import { LocaleChanger } from "@/components/locale-changer"
 import { NavLinks } from "@/components/nav-links"
+import { ThemeChanger } from "@/components/theme-changer"
+import { ButtonGroup } from "@heroui/react"
 
 export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
   return (
@@ -9,8 +11,13 @@ export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
           <NavLinks />
         </div>
 
-        <div className="absolute right-0 rounded-3xl p-3">
-          <LocaleChanger />
+        <div className="absolute right-0 flex items-center rounded-3xl p-3">
+          <ButtonGroup>
+            <LocaleChanger />
+            <ThemeChanger>
+              <ButtonGroup.Separator />
+            </ThemeChanger>
+          </ButtonGroup>
         </div>
       </div>
 
