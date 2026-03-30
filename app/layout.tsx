@@ -28,9 +28,16 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
         nunitoSansHeading.variable
       )}
     >
-      <body className="relative min-h-screen w-full bg-background px-20 py-10 text-foreground">
+      <body className="relative max-h-screen w-full p-10">
         <ThemeProvider>{children}</ThemeProvider>
+        <Background />
       </body>
     </html>
+  )
+}
+
+function Background() {
+  return (
+    <div className="absolute inset-0 -z-10 bg-radial from-sky-300 via-background to-background backdrop-blur-lg dark:from-sky-950 dark:via-background dark:to-background" />
   )
 }

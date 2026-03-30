@@ -1,5 +1,12 @@
 {
   "HomePage": {
-    "title": "Xin chào!"
+    "title": "Xin chào!",
+    "Navigation": {
+      "home": "Trang chủ",
+      "contact": "Liên hệ",
+      "projects": "Dự án",
+      "skills": "Kỹ năng",
+      "experiences": "Kinh nghiệm"
+    }
   }
 }
