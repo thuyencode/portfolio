@@ -1,7 +1,7 @@
-import { getTranslations } from "next-intl/server"
+import { useTranslations } from "next-intl"
 
-export default async function HomePage() {
-  const t = await getTranslations("HomePage")
+export default function HomePage() {
+  const t = useTranslations("page.Home")
 
   return (
     <div className="flex min-h-svh p-6">

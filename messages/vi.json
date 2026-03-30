@@ -1,12 +1,27 @@
 {
-  "HomePage": {
-    "title": "Xin chào!",
-    "Navigation": {
+  "page": {
+    "Home": {
+      "title": "Xin chào!"
+    }
+  },
+  "component": {
+    "NavLinks": {
       "home": "Trang chủ",
       "contact": "Liên hệ",
       "projects": "Dự án",
       "skills": "Kỹ năng",
       "experiences": "Kinh nghiệm"
+    },
+    "LanguageSwitcher": {
+      "languageCode": {
+        "en": "EN",
+        "vi": "VI"
+      },
+      "languageName": {
+        "default": "Mặc định",
+        "english": "Tiếng Anh",
+        "vietnamese": "Tiếng Việt"
+      }
     }
   }
 }

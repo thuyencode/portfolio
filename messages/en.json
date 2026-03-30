@@ -1,12 +1,27 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "Navigation": {
+  "page": {
+    "Home": {
+      "title": "Hello world!"
+    }
+  },
+  "component": {
+    "NavLinks": {
       "home": "Home",
       "contact": "Contact",
       "projects": "Projects",
       "skills": "Skills",
       "experiences": "Experiences"
+    },
+    "LanguageSwitcher": {
+      "languageCode": {
+        "en": "EN",
+        "vi": "VI"
+      },
+      "languageName": {
+        "default": "Default",
+        "english": "English",
+        "vietnamese": "Vietnamese"
+      }
     }
   }
 }

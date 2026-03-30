@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @import "@heroui/styles";
+
+@layer components {
+  .liquid-glass {
+    @apply border border-solid border-background/40 bg-background/50 shadow-lg backdrop-blur-lg;
+  }
+}
