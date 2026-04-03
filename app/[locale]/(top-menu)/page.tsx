@@ -1,13 +1,18 @@
+import avatarImage from "@/assets/avatar.jpg"
 import { useTranslations } from "next-intl"
+import Image from "next/image"
 
 export default function HomePage() {
   const t = useTranslations("page.Home")
 
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        {t("title")}
-      </div>
+    <div className="flex h-dvh items-center justify-center">
+      <Image
+        src={avatarImage}
+        alt="A picture of me"
+        width={400}
+        className="rounded-3xl shadow-lg"
+      />
     </div>
   )
 }
