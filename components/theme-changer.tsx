@@ -2,12 +2,8 @@
 
 import { Button, Dropdown } from "@heroui/react"
 import { MoonIcon, SunIcon } from "lucide-react"
-import { AnimatePresence, motion } from "motion/react"
 import { useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
-
-const SunIconWithMotion = motion.create(SunIcon)
-const MoonIconWithMotion = motion.create(MoonIcon)
 
 export function ThemeChanger({ children }: React.PropsWithChildren) {
   const t = useTranslations("component.ThemeChanger")
@@ -33,25 +29,11 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
       <Button variant="primary">
         {children}
 
-        <AnimatePresence>
-          {resolvedTheme === "dark" ? (
-            <MoonIconWithMotion
-              className="size-5"
-              initial={{ scale: 0, rotate: 90 }}
-              animate={{ scale: 1, rotate: 0 }}
-              exit={{ scale: 0, rotate: -90 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-            />
-          ) : (
-            <SunIconWithMotion
-              className="size-5"
-              initial={{ scale: 0, rotate: 90 }}
-              animate={{ scale: 1, rotate: 0 }}
-              exit={{ scale: 0, rotate: -90 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-            />
-          )}
-        </AnimatePresence>
+        {resolvedTheme === "dark" ? (
+          <MoonIcon className="size-5" />
+        ) : (
+          <SunIcon className="size-5" />
+        )}
 
         <span className="sr-only" suppressHydrationWarning>
           {getButtonLabel()}

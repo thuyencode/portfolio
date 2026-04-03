@@ -2,7 +2,6 @@
 
 import { useLocaleChanger } from "@/hooks/use-locale-changer"
 import { Button, Dropdown } from "@heroui/react"
-import { motion } from "motion/react"
 import { useLocale, useTranslations } from "next-intl"
 
 export function LocaleChanger() {
@@ -26,14 +25,7 @@ export function LocaleChanger() {
   return (
     <Dropdown>
       <Button variant="primary">
-        <motion.span
-          key={locale}
-          initial={{ rotateY: 90 }}
-          animate={{ rotateY: 0 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
-        >
-          {getButtonLabel()}
-        </motion.span>
+        <span key={locale}>{getButtonLabel()}</span>
 
         <span className="sr-only">{t(`languageCode.${locale}`)}</span>
       </Button>
