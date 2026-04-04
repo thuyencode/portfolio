@@ -2,7 +2,7 @@
 @import "@heroui/styles";
 
 @layer components {
-  .liquid-glass {
-    @apply border border-solid border-background/40 bg-background/50 shadow-lg backdrop-blur-lg;
+  .glassmorphism {
+    @apply border border-solid border-foreground/25 bg-background/50 shadow-lg backdrop-blur-lg;
   }
 }
