@@ -11,7 +11,8 @@ export default function HomePage() {
         src={avatarImage}
         alt="A picture of me"
         width={400}
-        className="rounded-3xl shadow-lg"
+        className="h-auto rounded-3xl shadow-lg"
+        loading="eager"
       />
     </div>
   )
