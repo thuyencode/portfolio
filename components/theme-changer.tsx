@@ -7,7 +7,7 @@ import { useTheme } from "next-themes"
 
 export function ThemeChanger({ children }: React.PropsWithChildren) {
   const t = useTranslations("component.ThemeChanger")
-  const { theme, resolvedTheme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
 
   function getButtonLabel() {
     switch (theme) {
@@ -29,11 +29,8 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
       <Button variant="primary">
         {children}
 
-        {resolvedTheme === "dark" ? (
-          <MoonIcon className="size-5" />
-        ) : (
-          <SunIcon className="size-5" />
-        )}
+        <MoonIcon className="hidden size-5 dark:inline-block" />
+        <SunIcon className="size-5 dark:hidden" />
 
         <span className="sr-only" suppressHydrationWarning>
           {getButtonLabel()}
