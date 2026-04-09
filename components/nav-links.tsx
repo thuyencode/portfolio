@@ -11,7 +11,7 @@ export function NavLinks() {
         {t("home")}
       </Link>
       <Link className={buttonVariants({ variant: "ghost" })} href="/">
-        {t("contact")}
+        {t("experiences")}
       </Link>
       <Link className={buttonVariants({ variant: "ghost" })} href="/">
         {t("projects")}
@@ -20,7 +20,7 @@ export function NavLinks() {
         {t("skills")}
       </Link>
       <Link className={buttonVariants({ variant: "ghost" })} href="/">
-        {t("experiences")}
+        {t("contact")}d
       </Link>
     </nav>
   )
