@@ -16,7 +16,7 @@ export default function HomePage() {
             {t("jobTitle")}
           </p>
 
-          <p className="font-medium">
+          <p className="leading-8 font-medium">
             {t("descriptionBeforeJs")}
 
             <Chip variant="primary" color="warning">
