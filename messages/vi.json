@@ -27,14 +27,18 @@
         "default": "Mặc định",
         "english": "Tiếng Anh",
         "vietnamese": "Tiếng Việt"
-      }
+      },
+      "tooltipPrefix": "Nhấn",
+      "tooltipSuffix": "để chuyển ngôn ngữ"
     },
     "ThemeChanger": {
       "theme": {
         "light": "Sáng",
         "dark": "Tối",
         "system": "Hệ thống"
-      }
+      },
+      "tooltipPrefix": "Nhấn",
+      "tooltipSuffix": "để chuyển màu giao diện"
     }
   }
 }

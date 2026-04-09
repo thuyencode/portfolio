@@ -27,14 +27,18 @@
         "default": "Default",
         "english": "English",
         "vietnamese": "Vietnamese"
-      }
+      },
+      "tooltipPrefix": "Press",
+      "tooltipSuffix": "to switch language"
     },
     "ThemeChanger": {
       "theme": {
         "light": "Light",
         "dark": "Dark",
         "system": "System"
-      }
+      },
+      "tooltipPrefix": "Press",
+      "tooltipSuffix": "to switch theme"
     }
   }
 }

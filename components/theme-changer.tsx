@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Dropdown } from "@heroui/react"
+import { Button, Dropdown, Kbd, Tooltip } from "@heroui/react"
 import { MoonIcon, SunIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
@@ -26,16 +26,29 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
 
   return (
     <Dropdown>
-      <Button variant="primary">
-        {children}
+      <Tooltip delay={0}>
+        <Button variant="primary" isIconOnly>
+          {children}
 
-        <MoonIcon className="hidden size-5 dark:inline-block" />
-        <SunIcon className="size-5 dark:hidden" />
+          <MoonIcon className="hidden size-5 dark:inline-block" />
+          <SunIcon className="size-5 dark:hidden" />
 
-        <span className="sr-only" suppressHydrationWarning>
-          {getButtonLabel()}
-        </span>
-      </Button>
+          <span className="sr-only" suppressHydrationWarning>
+            {getButtonLabel()}
+          </span>
+        </Button>
+
+        <Tooltip.Content showArrow offset={12}>
+          <Tooltip.Arrow />
+          <span>
+            {t("tooltipPrefix")}{" "}
+            <Kbd>
+              <Kbd.Content>D</Kbd.Content>
+            </Kbd>{" "}
+            {t("tooltipSuffix")}
+          </span>
+        </Tooltip.Content>
+      </Tooltip>
 
       <Dropdown.Popover className="min-w-30" placement="bottom">
         <Dropdown.Menu>
