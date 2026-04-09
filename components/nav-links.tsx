@@ -20,7 +20,7 @@ export function NavLinks() {
         {t("skills")}
       </Link>
       <Link className={buttonVariants({ variant: "ghost" })} href="/">
-        {t("contact")}d
+        {t("contact")}
       </Link>
     </nav>
   )
