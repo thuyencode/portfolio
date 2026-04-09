@@ -1,3 +1,4 @@
+import { LocaleHotkey } from "@/components/locale-hotkey"
 import { routing } from "@/i18n/routing"
 import { hasLocale, NextIntlClientProvider } from "next-intl"
 import { notFound } from "next/navigation"
@@ -12,5 +13,10 @@ export default async function LocaleLayout({
     notFound()
   }
 
-  return <NextIntlClientProvider>{children}</NextIntlClientProvider>
+  return (
+    <NextIntlClientProvider>
+      <LocaleHotkey />
+      {children}
+    </NextIntlClientProvider>
+  )
 }
