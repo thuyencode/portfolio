@@ -1,7 +1,13 @@
 {
   "page": {
     "Home": {
-      "title": "Hello world!"
+      "title": "Hello world!",
+      "name": "Tran Van Thuyen",
+      "jobTitle": "Fullstack Developer",
+      "descriptionBeforeJs": "A ",
+      "descriptionBetweenJsTs": "/",
+      "descriptionBetweenTsReact": " fullstack developer, with deep expertise in ",
+      "descriptionAfterReact": " and nearly 2 years of experience along with real-world project experience."
     }
   },
   "component": {

@@ -1,7 +1,13 @@
 {
   "page": {
     "Home": {
-      "title": "Xin chào!"
+      "title": "Xin chào!",
+      "name": "Trần Văn Thuyên",
+      "jobTitle": "Lập trình viên fullstack",
+      "descriptionBeforeJs": "Lập trình viên fullstack ",
+      "descriptionBetweenJsTs": "/",
+      "descriptionBetweenTsReact": ", chuyên sâu về ",
+      "descriptionAfterReact": " với gần 2 năm kinh nghiệm cùng kinh nghiệm làm dự án thực tế."
     }
   },
   "component": {
@@ -14,8 +20,8 @@
     },
     "LanguageSwitcher": {
       "languageCode": {
-        "en": "Anh",
-        "vi": "Việt"
+        "en": "EN",
+        "vi": "VI"
       },
       "languageName": {
         "default": "Mặc định",
