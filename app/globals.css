@@ -1,7 +1,16 @@
 @import "tailwindcss";
 @import "@heroui/styles";
 
-@layer components {
+@layer base {
+  h2 {
+    @apply text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl;
+  }
+  p {
+    @apply text-lg text-balance text-muted;
+  }
+}
+
+@layer utilities {
   .glassmorphism {
     @apply border border-solid border-foreground/25 bg-background/50 shadow-lg backdrop-blur-lg;
   }
