@@ -1,5 +1,6 @@
 import { LocaleChanger } from "@/components/locale-changer"
 import { NavLinks } from "@/components/nav-links"
+import { PopoutMenu } from "@/components/popout-menu"
 import { ThemeChanger } from "@/components/theme-changer"
 import { ButtonGroup } from "@heroui/react"
 
@@ -14,9 +15,14 @@ export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
         <div className="absolute right-32 flex items-center rounded-3xl p-3">
           <ButtonGroup>
             <LocaleChanger />
+
             <ThemeChanger>
               <ButtonGroup.Separator />
             </ThemeChanger>
+
+            <PopoutMenu>
+              <ButtonGroup.Separator />
+            </PopoutMenu>
           </ButtonGroup>
         </div>
       </div>

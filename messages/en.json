@@ -39,6 +39,16 @@
       },
       "tooltipPrefix": "Press",
       "tooltipSuffix": "to switch theme"
+    },
+    "PopoutMenu": {
+      "srOnly": "Pop-out menu",
+      "keyboardShortcuts": "Keyboard Shortcuts"
+    },
+    "KeyboardShortcutsModal": {
+      "title": "Keyboard Shortcuts",
+      "openKeymap": "Open keymap",
+      "switchLocale": "Switch locale",
+      "switchTheme": "Switch theme"
     }
   }
 }

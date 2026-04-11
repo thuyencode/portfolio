@@ -39,6 +39,16 @@
       },
       "tooltipPrefix": "Nhấn",
       "tooltipSuffix": "để chuyển màu giao diện"
+    },
+    "PopoutMenu": {
+      "srOnly": "Menu bật lên",
+      "keyboardShortcuts": "Phím tắt bàn phím"
+    },
+    "KeyboardShortcutsModal": {
+      "title": "Phím tắt bàn phím",
+      "openKeymap": "Mở bản đồ phím",
+      "switchLocale": "Chuyển ngôn ngữ",
+      "switchTheme": "Chuyển màu giao diện"
     }
   }
 }
