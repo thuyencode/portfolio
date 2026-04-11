@@ -26,7 +26,7 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
 
   return (
     <Dropdown>
-      <Tooltip delay={0}>
+      <Tooltip delay={200}>
         <Button variant="primary" isIconOnly>
           {children}
 
@@ -43,6 +43,7 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
           <span>
             {t("tooltipPrefix")}{" "}
             <Kbd>
+              <Kbd.Abbr keyValue="ctrl" />
               <Kbd.Content>D</Kbd.Content>
             </Kbd>{" "}
             {t("tooltipSuffix")}

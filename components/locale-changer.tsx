@@ -23,7 +23,7 @@ export function LocaleChanger() {
 
   return (
     <Dropdown>
-      <Tooltip delay={0}>
+      <Tooltip delay={200}>
         <Button variant="primary" isIconOnly>
           <span key={locale}>{getButtonLabel()}</span>
           <span className="sr-only">{t(`languageCode.${locale}`)}</span>
@@ -34,6 +34,7 @@ export function LocaleChanger() {
           <span>
             {t("tooltipPrefix")}{" "}
             <Kbd>
+              <Kbd.Abbr keyValue="ctrl" />
               <Kbd.Content>L</Kbd.Content>
             </Kbd>{" "}
             {t("tooltipSuffix")}
