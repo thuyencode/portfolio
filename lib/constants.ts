@@ -7,3 +7,9 @@ export const KEY_MAP = {
   switchLocale: ["ctrl", "L"],
   switchTheme: ["ctrl", "D"],
 } as const satisfies KeyMap
+
+type SectionIdMap = Record<string, `#${string}`>
+
+export const SECTION_ID_MAP = {
+  home: `#home`,
+} as const satisfies SectionIdMap
