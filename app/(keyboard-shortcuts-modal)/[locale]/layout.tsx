@@ -1,3 +1,4 @@
+import { KeyboardShortcutsModal } from "@/components/keyboard-shortcuts-modal"
 import { LocaleHotkey } from "@/components/locale-hotkey"
 import { routing } from "@/i18n/routing"
 import { hasLocale, NextIntlClientProvider } from "next-intl"
@@ -16,6 +17,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider>
       <LocaleHotkey />
+      <KeyboardShortcutsModal />
       {children}
     </NextIntlClientProvider>
   )
