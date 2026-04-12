@@ -1,6 +1,7 @@
 "use client"
 
 import { KeyboardShortcutsModalContext } from "@/app/contexts/keyboard-shortcuts-context"
+import { KEY_MAP } from "@/lib/constants"
 import { Kbd, Modal, useOverlayState } from "@heroui/react"
 import { useHotkey } from "@tanstack/react-hotkeys"
 import { KeyboardIcon } from "lucide-react"
@@ -37,24 +38,24 @@ export function KeyboardShortcutsModalProvider({
                   <li className="flex items-center justify-between">
                     <span>{t("openKeymap")}</span>
                     <Kbd>
-                      <Kbd.Abbr keyValue="ctrl" />
-                      <Kbd.Content>;</Kbd.Content>
+                      <Kbd.Abbr keyValue={KEY_MAP.openKeymap[0]} />
+                      <Kbd.Content>{KEY_MAP.openKeymap[1]}</Kbd.Content>
                     </Kbd>
                   </li>
 
                   <li className="flex items-center justify-between">
                     <span>{t("switchLocale")}</span>
                     <Kbd>
-                      <Kbd.Abbr keyValue="ctrl" />
-                      <Kbd.Content>L</Kbd.Content>
+                      <Kbd.Abbr keyValue={KEY_MAP.switchLocale[0]} />
+                      <Kbd.Content>{KEY_MAP.switchLocale[1]}</Kbd.Content>
                     </Kbd>
                   </li>
 
                   <li className="flex items-center justify-between">
                     <span>{t("switchTheme")}</span>
                     <Kbd>
-                      <Kbd.Abbr keyValue="ctrl" />
-                      <Kbd.Content>D</Kbd.Content>
+                      <Kbd.Abbr keyValue={KEY_MAP.switchTheme[0]} />
+                      <Kbd.Content>{KEY_MAP.switchTheme[1]}</Kbd.Content>
                     </Kbd>
                   </li>
                 </ul>

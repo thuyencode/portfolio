@@ -1,6 +1,7 @@
 "use client"
 
 import { useLocaleChanger } from "@/hooks/use-locale-changer"
+import { KEY_MAP } from "@/lib/constants"
 import { Button, Dropdown, Kbd, Tooltip } from "@heroui/react"
 import { useLocale, useTranslations } from "next-intl"
 
@@ -34,8 +35,8 @@ export function LocaleChanger() {
           <span>
             {t("tooltipPrefix")}{" "}
             <Kbd>
-              <Kbd.Abbr keyValue="ctrl" />
-              <Kbd.Content>L</Kbd.Content>
+              <Kbd.Abbr keyValue={KEY_MAP.switchLocale[0]} />
+              <Kbd.Content>{KEY_MAP.switchLocale[1]}</Kbd.Content>
             </Kbd>{" "}
             {t("tooltipSuffix")}
           </span>
