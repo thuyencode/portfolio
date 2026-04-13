@@ -25,7 +25,7 @@ export function LocaleChanger() {
   return (
     <Dropdown>
       <Tooltip delay={200}>
-        <Button variant="primary" isIconOnly>
+        <Button isIconOnly>
           <span key={locale}>{getButtonLabel()}</span>
           <span className="sr-only">{t(`languageCode.${locale}`)}</span>
         </Button>

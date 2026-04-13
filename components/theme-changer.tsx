@@ -28,7 +28,7 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
   return (
     <Dropdown>
       <Tooltip delay={200}>
-        <Button variant="primary" isIconOnly>
+        <Button isIconOnly>
           {children}
 
           <MoonIcon className="hidden size-5 dark:inline-block" />
