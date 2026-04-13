@@ -21,7 +21,7 @@ function HomeSection() {
       id={SECTION_ID_MAP.home}
     >
       <div className="space-y-5">
-        <h2>{t("name")}</h2>
+        <h1>{t("name")}</h1>
 
         <p className="text-xl font-semibold tracking-wide text-accent capitalize italic underline underline-offset-[6px]">
           {t("jobTitle")}

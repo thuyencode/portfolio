@@ -2,8 +2,11 @@
 @import "@heroui/styles";
 
 @layer base {
-  h2 {
+  h1 {
     @apply text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl;
+  }
+  h2 {
+    @apply text-2xl font-semibold tracking-tight text-foreground sm:text-3xl lg:text-4xl;
   }
   p {
     @apply text-lg text-balance text-muted;
