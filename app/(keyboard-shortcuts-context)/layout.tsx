@@ -1,4 +1,4 @@
-import { KeyboardShortcutsModalProvider } from "@/components/keyboard-shortcuts-modal-provider"
+import { KeyboardShortcutsModalProvider } from "@/contexts/keyboard-shortcuts-context"
 
 export default function KeyboardShortcutsModalLayout({
   children,

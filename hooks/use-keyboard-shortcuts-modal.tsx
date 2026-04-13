@@ -1,4 +1,4 @@
-import { KeyboardShortcutsModalContext } from "@/app/contexts/keyboard-shortcuts-context"
+import { KeyboardShortcutsModalContext } from "@/contexts/keyboard-shortcuts-context"
 import { use } from "react"
 
 export function useKeyboardShortcutsModal() {

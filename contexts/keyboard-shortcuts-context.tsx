@@ -1,8 +1,11 @@
 "use client"
 
-import { KeyboardShortcutsModalContext } from "@/app/contexts/keyboard-shortcuts-context"
-import { useOverlayState } from "@heroui/react"
+import { useOverlayState, UseOverlayStateReturn } from "@heroui/react"
 import { useHotkey } from "@tanstack/react-hotkeys"
+import { createContext } from "react"
+
+export const KeyboardShortcutsModalContext =
+  createContext<UseOverlayStateReturn | null>(null)
 
 export function KeyboardShortcutsModalProvider({
   children,
