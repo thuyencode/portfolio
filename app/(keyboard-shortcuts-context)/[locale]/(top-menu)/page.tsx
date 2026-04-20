@@ -75,7 +75,10 @@ function ExperienceSection() {
   const t = useTranslations("page.Home")
 
   return (
-    <section className="mx-auto max-w-6xl space-y-7 px-10">
+    <section
+      className="mx-auto h-dvh max-w-6xl space-y-7 px-10"
+      id={SECTION_ID_MAP.experience}
+    >
       <h2>{t("experienceTitle")}</h2>
 
       <MarqueeList>

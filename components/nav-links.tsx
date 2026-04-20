@@ -14,7 +14,10 @@ export function NavLinks() {
       >
         {t("home")}
       </Link>
-      <Link className={buttonVariants({ variant: "ghost" })} href="/">
+      <Link
+        className={buttonVariants({ variant: "ghost" })}
+        href={SECTION_ID_MAP.experience}
+      >
         {t("experiences")}
       </Link>
       <Link className={buttonVariants({ variant: "ghost" })} href="/">
