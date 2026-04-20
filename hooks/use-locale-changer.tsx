@@ -8,7 +8,7 @@ export function useLocaleChanger() {
   const router = useRouter()
 
   function switchLocale(locale?: Locale) {
-    router.replace(pathname, { locale })
+    router.replace(pathname, { locale, scroll: false })
   }
 
   return switchLocale
