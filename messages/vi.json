@@ -4,6 +4,8 @@
       "title": "Xin chào!",
       "name": "Trần Văn Thuyên",
       "jobTitle": "Lập trình viên fullstack",
+      "experienceTitle": "Kinh nghiệm thực tế",
+      "placeholderText": "Đây có thể là bạn",
       "descriptionBeforeJs": "Lập trình viên fullstack ",
       "descriptionBetweenJsTs": "/",
       "descriptionBetweenTsReact": ", chuyên sâu về ",

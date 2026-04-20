@@ -4,6 +4,8 @@
       "title": "Hello world!",
       "name": "Tran Van Thuyen",
       "jobTitle": "Fullstack Developer",
+      "experienceTitle": "Real-world experience",
+      "placeholderText": "This could be you",
       "descriptionBeforeJs": "A ",
       "descriptionBetweenJsTs": "/",
       "descriptionBetweenTsReact": " fullstack developer, with deep expertise in ",

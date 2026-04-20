@@ -1,4 +1,8 @@
 import avatarImage from "@/assets/avatar.jpg"
+import cosdenLogoDark from "@/assets/experiences/cosden_solutions_dark_mode.png"
+import cosdenLogoLight from "@/assets/experiences/cosden_solutions_light_mode.png"
+import { CompanyLogo } from "@/components/company-logo"
+import { MarqueeList } from "@/components/marquee-list"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { Chip } from "@heroui/react"
 import { useTranslations } from "next-intl"
@@ -6,8 +10,9 @@ import Image from "next/image"
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="min-h-dvh space-y-12 py-32">
       <HomeSection />
+      <ExperienceSection />
     </main>
   )
 }
@@ -17,7 +22,7 @@ function HomeSection() {
 
   return (
     <section
-      className="mx-auto flex h-dvh max-w-4xl items-center justify-center gap-10"
+      className="mx-auto flex max-w-4xl items-center justify-center gap-10"
       id={SECTION_ID_MAP.home}
     >
       <div className="space-y-5">
@@ -62,6 +67,33 @@ function HomeSection() {
         className="h-auto rounded-3xl shadow-lg"
         loading="eager"
       />
+    </section>
+  )
+}
+
+function ExperienceSection() {
+  const t = useTranslations("page.Home")
+
+  return (
+    <section className="mx-auto max-w-6xl space-y-7 px-10">
+      <h2>{t("experienceTitle")}</h2>
+
+      <MarqueeList>
+        <CompanyLogo
+          lightVariantSrc={cosdenLogoLight}
+          darkVariantSrc={cosdenLogoDark}
+          alt="Cosden Solutions"
+          width={300}
+          height={64}
+        />
+        <CompanyLogo
+          lightVariantSrc={`https://placehold.co/300x64/png?font=roboto&text=${encodeURIComponent(t("placeholderText"))}`}
+          darkVariantSrc={`https://placehold.co/300x64/png?font=roboto&text=${encodeURIComponent(t("placeholderText"))}`}
+          alt="Placeholder 1"
+          width={300}
+          height={64}
+        />
+      </MarqueeList>
     </section>
   )
 }
