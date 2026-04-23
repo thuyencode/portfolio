@@ -14,7 +14,7 @@ export function KeyboardShortcutsModal() {
     ""
   )
 
-  useHotkey("Mod+;", () => {
+  useHotkey("Alt+;", () => {
     if (hasSaidParam) {
       removeFromRoute()
     } else {
