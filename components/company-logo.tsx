@@ -17,7 +17,7 @@ export function CompanyLogo({
   ...props
 }: CompanyLogoProps) {
   return (
-    <figure>
+    <div>
       <Image
         {...props}
         src={lightVariantSrc}
@@ -32,6 +32,6 @@ export function CompanyLogo({
         className={cn("hidden h-16 w-auto object-cover dark:block", className)}
         loading="lazy"
       />
-    </figure>
+    </div>
   )
 }
