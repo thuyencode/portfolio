@@ -1,6 +1,6 @@
 "use client"
 
-import { useKeyboardShortcutsModal } from "@/hooks/use-keyboard-shortcuts-modal"
+import { useQueryString } from "@/hooks/use-query-string"
 import { KEY_MAP } from "@/lib/constants"
 import { Button, Dropdown, Kbd } from "@heroui/react"
 import { MenuIcon } from "lucide-react"
@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl"
 
 export function PopoutMenu({ children }: React.PropsWithChildren) {
   const t = useTranslations("component.PopoutMenu")
-  const { open } = useKeyboardShortcutsModal()
+  const { addToRoute } = useQueryString("keymap", "")
 
   return (
     <Dropdown>
@@ -20,7 +20,7 @@ export function PopoutMenu({ children }: React.PropsWithChildren) {
 
       <Dropdown.Popover placement="bottom right">
         <Dropdown.Menu>
-          <Dropdown.Item className="justify-between" onClick={open}>
+          <Dropdown.Item className="justify-between" onClick={addToRoute}>
             <span>{t("keyboardShortcuts")}</span>
             <Kbd>
               <Kbd.Abbr keyValue={KEY_MAP.openKeymap[0]} />

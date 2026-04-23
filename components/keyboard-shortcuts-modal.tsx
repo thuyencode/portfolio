@@ -1,18 +1,31 @@
 "use client"
 
-import { useKeyboardShortcutsModal } from "@/hooks/use-keyboard-shortcuts-modal"
+import { useQueryString } from "@/hooks/use-query-string"
 import { KEY_MAP } from "@/lib/constants"
 import { Kbd, Modal } from "@heroui/react"
+import { useHotkey } from "@tanstack/react-hotkeys"
 import { KeyboardIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
 
 export function KeyboardShortcutsModal() {
   const t = useTranslations("component.KeyboardShortcutsModal")
-  const state = useKeyboardShortcutsModal()
+  const { hasSaidParam, addToRoute, removeFromRoute } = useQueryString(
+    "keymap",
+    ""
+  )
+
+  useHotkey("Mod+;", addToRoute)
 
   return (
     <Modal>
-      <Modal.Backdrop isOpen={state.isOpen} onOpenChange={state.setOpen}>
+      <Modal.Backdrop
+        isOpen={hasSaidParam}
+        onOpenChange={(isOpen) => {
+          if (isOpen) return
+
+          removeFromRoute()
+        }}
+      >
         <Modal.Container>
           <Modal.Dialog className="w-xs">
             <Modal.CloseTrigger />
