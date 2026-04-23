@@ -1,7 +1,9 @@
 import { Children } from "react"
 import Marquee from "react-fast-marquee"
 
-export function MarqueeList({ children }: React.PropsWithChildren) {
+type MarqueeListProps = React.ComponentProps<typeof Marquee>
+
+export function MarqueeList({ children, ...props }: MarqueeListProps) {
   const wrappedChildren = Children.map(children, (child, index) => (
     <div key={index} className="mx-2.5">
       {child}
@@ -9,7 +11,7 @@ export function MarqueeList({ children }: React.PropsWithChildren) {
   ))
 
   return (
-    <Marquee pauseOnHover autoFill play>
+    <Marquee autoFill play {...props}>
       {wrappedChildren}
     </Marquee>
   )
