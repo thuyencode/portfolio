@@ -39,12 +39,14 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
       className={cn(
         "antialiased",
         fontMono.variable,
         "font-sans",
         inter.variable,
-        nunitoSansHeading.variable
+        nunitoSansHeading.variable,
+        "scroll-pt-32 scroll-smooth"
       )}
     >
       <body className="relative bg-background">

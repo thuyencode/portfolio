@@ -22,7 +22,7 @@ import Image from "next/image"
 export default function HomePage() {
   return (
     <>
-      <main className="min-h-dvh space-y-12 py-32">
+      <main className="min-h-dvh space-y-16 py-32">
         <HomeSection />
         <ExperienceSection />
       </main>
@@ -41,7 +41,7 @@ function HomeSection() {
       id={SECTION_ID_MAP.home}
     >
       <div className="space-y-5">
-        <h1>{t("name")}</h1>
+        <h1 className="uppercase">{t("name")}</h1>
 
         <p className="text-xl font-semibold tracking-wide text-accent capitalize italic underline underline-offset-[6px]">
           {t("jobTitle")}
@@ -94,7 +94,9 @@ function ExperienceSection() {
       className="mx-auto h-dvh max-w-6xl px-10"
       id={SECTION_ID_MAP.experience}
     >
-      <h2>{t("experienceTitle")}</h2>
+      <h2 className="text-center tracking-wide uppercase">
+        {t("experienceTitle")}
+      </h2>
 
       <MarqueeList className="mt-10 mb-14">
         <CompanyLogo
@@ -119,6 +121,18 @@ function ExperienceSection() {
 
       <Carousel>
         <CarouselContent>
+          <CarouselItem>
+            <Blockquote
+              author="Cosden Solutions"
+              testimonial={t("testimonialCosden")}
+              companyLogoProps={{
+                lightVariantSrc: cosdenLogoLightNoText,
+                darkVariantSrc: cosdenLogoDarkNoText,
+                alt: "Cosden Solutions",
+              }}
+            />
+          </CarouselItem>
+
           <CarouselItem>
             <Blockquote
               author="Cosden Solutions"

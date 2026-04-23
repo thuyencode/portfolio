@@ -8,18 +8,18 @@ export function NavLinks() {
 
   return (
     <nav>
-      <Link
+      <a
         className={buttonVariants({ variant: "ghost" })}
-        href={SECTION_ID_MAP.home}
+        href={`#${SECTION_ID_MAP.home}`}
       >
         {t("home")}
-      </Link>
-      <Link
+      </a>
+      <a
         className={buttonVariants({ variant: "ghost" })}
-        href={SECTION_ID_MAP.experience}
+        href={`#${SECTION_ID_MAP.experience}`}
       >
         {t("experiences")}
-      </Link>
+      </a>
       <Link className={buttonVariants({ variant: "ghost" })} href="/">
         {t("projects")}
       </Link>

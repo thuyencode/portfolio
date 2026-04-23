@@ -8,11 +8,11 @@ export const KEY_MAP = {
   switchTheme: ["ctrl", "D"],
 } as const satisfies KeyMap
 
-type SectionIdMap = Record<string, `#${string}`>
+type SectionIdMap = Record<string, string>
 
 export const SECTION_ID_MAP = {
-  home: `#home`,
-  experience: `#experience`,
+  home: `home`,
+  experience: `experience`,
 } as const satisfies SectionIdMap
 
 export const EXPERIENCES = ["cosden_code"] as const
