@@ -2,7 +2,7 @@ import { LocaleChanger } from "@/components/locale-changer"
 import { NavLinks } from "@/components/nav-links"
 import { PopoutMenu } from "@/components/popout-menu"
 import { ThemeChanger } from "@/components/theme-changer"
-import { ButtonGroup } from "@heroui/react"
+import { ButtonGroup, ScrollShadow } from "@heroui/react"
 
 export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
   return (
@@ -27,7 +27,7 @@ export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
         </div>
       </div>
 
-      {children}
+      <ScrollShadow className="max-h-dvh">{children}</ScrollShadow>
     </>
   )
 }
