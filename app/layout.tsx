@@ -28,9 +28,9 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
         nunitoSansHeading.variable
       )}
     >
-      <body className="relative">
+      <body className="relative bg-background">
         <ThemeProvider>{children}</ThemeProvider>
-        <Background />
+        {/*<Background />*/}
       </body>
     </html>
   )
@@ -38,6 +38,6 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
 
 function Background() {
   return (
-    <div className="absolute inset-0 -z-10 bg-radial from-sky-300 via-background to-background backdrop-blur-lg dark:from-sky-950 dark:via-background dark:to-background" />
+    <div className="fixed inset-0 -z-10 max-h-dvh bg-radial from-sky-300 via-background to-background backdrop-blur-lg dark:from-sky-950 dark:via-background dark:to-background" />
   )
 }
