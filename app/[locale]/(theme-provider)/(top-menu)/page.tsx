@@ -22,7 +22,7 @@ import Image from "next/image"
 export default function HomePage() {
   return (
     <>
-      <main className="min-h-dvh space-y-16 py-32">
+      <main className="min-h-dvh scroll-smooth px-10">
         <HomeSection />
         <ExperienceSection />
       </main>
@@ -37,7 +37,7 @@ function HomeSection() {
 
   return (
     <section
-      className="mx-auto flex max-w-4xl items-center justify-center gap-10"
+      className="mx-auto flex max-w-4xl items-center justify-center gap-10 pt-28"
       id={SECTION_ID_MAP.home}
     >
       <div className="space-y-5">
@@ -91,10 +91,10 @@ function ExperienceSection() {
 
   return (
     <section
-      className="mx-auto h-dvh max-w-6xl px-10"
+      className="mx-auto h-dvh max-w-6xl pt-28"
       id={SECTION_ID_MAP.experience}
     >
-      <h2 className="text-center tracking-wide uppercase">
+      <h2 className="text-center text-2xl tracking-wide uppercase">
         {t("experienceTitle")}
       </h2>
 

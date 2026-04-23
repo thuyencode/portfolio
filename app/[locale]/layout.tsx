@@ -45,8 +45,7 @@ export default async function LocaleLayout({
         fontMono.variable,
         "font-sans",
         inter.variable,
-        nunitoSansHeading.variable,
-        "scroll-pt-32 scroll-smooth"
+        nunitoSansHeading.variable
       )}
     >
       <body className="relative bg-background">
