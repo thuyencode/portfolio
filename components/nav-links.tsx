@@ -2,24 +2,17 @@ import { Link } from "@/i18n/navigation"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { buttonVariants } from "@heroui/styles"
 import { useTranslations } from "next-intl"
+import { HashLink } from "./hash-link"
 
 export function NavLinks() {
   const t = useTranslations("component.NavLinks")
 
   return (
     <nav>
-      <a
-        className={buttonVariants({ variant: "ghost" })}
-        href={`#${SECTION_ID_MAP.home}`}
-      >
-        {t("home")}
-      </a>
-      <a
-        className={buttonVariants({ variant: "ghost" })}
-        href={`#${SECTION_ID_MAP.experience}`}
-      >
+      <HashLink href={`#${SECTION_ID_MAP.home}`}>{t("home")}</HashLink>
+      <HashLink href={`#${SECTION_ID_MAP.experience}`}>
         {t("experiences")}
-      </a>
+      </HashLink>
       <Link className={buttonVariants({ variant: "ghost" })} href="/">
         {t("projects")}
       </Link>
