@@ -23,11 +23,11 @@ export function useQueryString(name: string, value: string) {
   }
 
   function addToRoute() {
-    router.push(`${pathname}?${addQuery()}`)
+    router.push(`${pathname}?${addQuery()}`, { scroll: false })
   }
 
   function removeFromRoute() {
-    router.push(`${pathname}?${removeQuery()}`)
+    router.push(`${pathname}?${removeQuery()}`, { scroll: false })
   }
 
   return { hasSaidParam, addToRoute, removeFromRoute }
