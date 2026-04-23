@@ -114,7 +114,7 @@ function ExperienceSection() {
       </MarqueeList>
 
       <p className="mb-10 text-center text-2xl font-medium text-foreground">
-        Some words from past employers and partners
+        {t("testimonialsTitle")}
       </p>
 
       <Carousel>
@@ -122,7 +122,7 @@ function ExperienceSection() {
           <CarouselItem>
             <Blockquote
               author="Cosden Solutions"
-              testimonial="I worked with Thuyen on an educational platform for Cosden Solutions for a couple of months. I can say that Thuyen is a great developer with a lot of potential. He is very thorough, learns quickly, and produces very good work. I have given him tough challenges to face, some even beyond his current skillset, and he has risen to face those challenges and succeeded every time. Working with Thuyen is really easy. He is great at communication, will reach out when needed, and won't waste anyone's time. He is independent, and can handle tough problems and find solutions to them. He is also a great learner, which will make a very good investment as a developer. I'm sure he will grow and achieve great things. I would absolutely recommend Thuyen for any developer position as I genuinely think he will be an incredibly valuable resource!"
+              testimonial={t("testimonialCosden")}
               companyLogoProps={{
                 lightVariantSrc: cosdenLogoLightNoText,
                 darkVariantSrc: cosdenLogoDarkNoText,
