@@ -1,7 +1,7 @@
 "use client"
 
 import { useHotkey } from "@tanstack/react-hotkeys"
-import { useTheme } from "next-themes"
+import { useTheme } from "@wrksz/themes/client"
 
 export function ThemeHotkey() {
   const { resolvedTheme, setTheme } = useTheme()

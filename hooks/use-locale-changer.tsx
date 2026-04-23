@@ -13,6 +13,7 @@ export function useLocaleChanger() {
     router.replace(`${pathname}?${searchParams.toString()}`, {
       locale,
       scroll: false,
+      transitionTypes: [],
     })
   }
 

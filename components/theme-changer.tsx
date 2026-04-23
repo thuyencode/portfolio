@@ -2,24 +2,18 @@
 
 import { KEY_MAP } from "@/lib/constants"
 import { Button, Dropdown, Kbd, Tooltip } from "@heroui/react"
+import { useTheme, useThemeValue } from "@wrksz/themes/client"
 import { MoonIcon, SunIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { useTheme } from "next-themes"
 
 export function ThemeChanger({ children }: React.PropsWithChildren) {
   const t = useTranslations("component.ThemeChanger")
-  const { theme, setTheme } = useTheme()
-
-  function getButtonLabel() {
-    switch (theme) {
-      case "light":
-        return t("theme.light")
-      case "dark":
-        return t("theme.dark")
-      default:
-        return t("theme.system")
-    }
-  }
+  const { setTheme } = useTheme()
+  const label = useThemeValue({
+    light: t("theme.light"),
+    dark: t("theme.dark"),
+    system: t("theme.system"),
+  })
 
   const switchToDarkTheme = () => setTheme("dark")
   const switchToLightTheme = () => setTheme("light")
@@ -35,7 +29,7 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
           <SunIcon className="size-5 dark:hidden" />
 
           <span className="sr-only" suppressHydrationWarning>
-            {getButtonLabel()}
+            {label}
           </span>
         </Button>
 
