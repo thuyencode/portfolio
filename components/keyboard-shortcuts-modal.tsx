@@ -11,7 +11,7 @@ export function KeyboardShortcutsModal() {
   const t = useTranslations("component.KeyboardShortcutsModal")
   const { hasSaidParam, addToRoute, removeFromRoute } = useQueryString(
     "keymap",
-    ""
+    "true"
   )
 
   useHotkey("Alt+;", () => {

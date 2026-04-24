@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl"
 
 export function PopoutMenu({ children }: React.PropsWithChildren) {
   const t = useTranslations("component.PopoutMenu")
-  const { addToRoute } = useQueryString("keymap", "")
+  const { addToRoute } = useQueryString("keymap", "true")
 
   return (
     <Dropdown>
