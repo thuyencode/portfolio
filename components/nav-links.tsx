@@ -8,7 +8,7 @@ export function NavLinks() {
   const t = useTranslations("component.NavLinks")
 
   return (
-    <nav>
+    <nav className="space-x-1">
       <HashLink href={`#${SECTION_ID_MAP.home}`}>{t("home")}</HashLink>
       <HashLink href={`#${SECTION_ID_MAP.experience}`}>
         {t("experiences")}
