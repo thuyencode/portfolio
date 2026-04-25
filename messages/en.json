@@ -48,7 +48,7 @@
       "srOnly": "Pop-out menu",
       "keyboardShortcuts": "Keyboard Shortcuts"
     },
-    "KeyboardShortcutsModal": {
+    "KeymapModal": {
       "title": "Keyboard Shortcuts",
       "openKeymap": "Open keymap",
       "switchLocale": "Switch locale",

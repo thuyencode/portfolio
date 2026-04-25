@@ -48,7 +48,7 @@
       "srOnly": "Menu bật lên",
       "keyboardShortcuts": "Phím tắt bàn phím"
     },
-    "KeyboardShortcutsModal": {
+    "KeymapModal": {
       "title": "Phím tắt bàn phím",
       "openKeymap": "Mở bản đồ phím",
       "switchLocale": "Chuyển ngôn ngữ",

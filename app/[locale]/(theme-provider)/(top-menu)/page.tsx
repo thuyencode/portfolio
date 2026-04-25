@@ -12,7 +12,7 @@ import {
   CarouselPrevious,
 } from "@/components/carousel"
 import { CompanyLogo } from "@/components/company-logo"
-import { KeyboardShortcutsModal } from "@/components/keyboard-shortcuts-modal"
+import { KeymapModal } from "@/components/keymap-modal"
 import { MarqueeList } from "@/components/marquee-list"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { Chip } from "@heroui/react"
@@ -27,7 +27,7 @@ export default function HomePage() {
         <ExperienceSection />
       </main>
 
-      <KeyboardShortcutsModal />
+      <KeymapModal />
     </>
   )
 }

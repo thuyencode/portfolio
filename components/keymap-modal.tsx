@@ -7,8 +7,8 @@ import { useHotkey } from "@tanstack/react-hotkeys"
 import { KeyboardIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
 
-export function KeyboardShortcutsModal() {
-  const t = useTranslations("component.KeyboardShortcutsModal")
+export function KeymapModal() {
+  const t = useTranslations("component.KeymapModal")
   const { hasSaidParam, addToRoute, removeFromRoute } = useQueryString(
     "keymap",
     "true"
