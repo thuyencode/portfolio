@@ -1,8 +1,3 @@
-import avatarImage from "@/assets/avatar.jpg"
-import cosdenLogoDark from "@/assets/experiences/cosden_solutions_dark_mode.png"
-import cosdenLogoDarkNoText from "@/assets/experiences/cosden_solutions_dark_mode_no_text.png"
-import cosdenLogoLight from "@/assets/experiences/cosden_solutions_light_mode.png"
-import cosdenLogoLightNoText from "@/assets/experiences/cosden_solutions_light_mode_no_text.png"
 import { Blockquote } from "@/components/blockquote"
 import {
   Carousel,
@@ -76,9 +71,10 @@ function HomeSection() {
         </p>
       </div>
       <Image
-        src={avatarImage}
+        src={`/assets/avatar.jpg`}
         alt="A picture of me"
         width={400}
+        height={400}
         className="h-auto rounded-3xl shadow-lg"
         loading="eager"
       />
@@ -100,10 +96,10 @@ function ExperienceSection() {
 
       <MarqueeList className="mt-10 mb-14">
         <CompanyLogo
-          lightVariantSrc={cosdenLogoLight}
-          darkVariantSrc={cosdenLogoDark}
+          lightVariantSrc={`/assets/experiences/cosden_solutions_light_mode.png`}
+          darkVariantSrc={`/assets/experiences/cosden_solutions_dark_mode.png`}
           alt="Cosden Solutions"
-          width={300}
+          width={245}
           height={64}
         />
         <CompanyLogo
@@ -126,8 +122,8 @@ function ExperienceSection() {
               author="Cosden Solutions"
               testimonial={t("testimonialCosden")}
               companyLogoProps={{
-                lightVariantSrc: cosdenLogoLightNoText,
-                darkVariantSrc: cosdenLogoDarkNoText,
+                lightVariantSrc: `/assets/experiences/cosden_solutions_light_mode_no_text.png`,
+                darkVariantSrc: `/assets/experiences/cosden_solutions_dark_mode_no_text.png`,
                 alt: "Cosden Solutions",
               }}
             />
@@ -138,8 +134,8 @@ function ExperienceSection() {
               author="Cosden Solutions"
               testimonial={t("testimonialCosden")}
               companyLogoProps={{
-                lightVariantSrc: cosdenLogoLightNoText,
-                darkVariantSrc: cosdenLogoDarkNoText,
+                lightVariantSrc: `/assets/experiences/cosden_solutions_light_mode_no_text.png`,
+                darkVariantSrc: `/assets/experiences/cosden_solutions_dark_mode_no_text.png`,
                 alt: "Cosden Solutions",
               }}
             />
