@@ -53,7 +53,7 @@ export default async function LocaleLayout({
           <LocaleHotkey />
           {children}
         </NextIntlClientProvider>
-        {/*<Background />*/}
+        <Background />
       </body>
     </html>
   )
@@ -61,6 +61,6 @@ export default async function LocaleLayout({
 
 function Background() {
   return (
-    <div className="fixed inset-0 -z-10 max-h-dvh bg-radial from-sky-300 via-background to-background backdrop-blur-lg dark:from-sky-950 dark:via-background dark:to-background" />
+    <div className="fixed inset-0 -z-10 max-h-dvh bg-[radial-gradient(ellipse_90%_90%_at_50%_50%,transparent_0%,color-mix(in_srgb,var(--color-border)_30%,transparent)_40%,var(--color-border)_70%,var(--color-border)_100%)] mask-[url(/assets/backgrounds/plus.svg)] bg-repeat" />
   )
 }
