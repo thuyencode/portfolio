@@ -8,7 +8,7 @@ import {
 } from "@/components/carousel"
 import { CompanyLogo } from "@/components/company-logo"
 import { KeymapModal } from "@/components/keymap-modal"
-import { MarqueeList } from "@/components/marquee-list"
+import { Marquee } from "@/components/marquee"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { Chip } from "@heroui/react"
 import { useTranslations } from "next-intl"
@@ -94,7 +94,7 @@ function ExperienceSection() {
         {t("experienceTitle")}
       </h2>
 
-      <MarqueeList className="mt-10 mb-14">
+      <Marquee className="mt-10 mb-14 [--duration:15s]">
         <CompanyLogo
           lightVariantSrc={`/assets/experiences/cosden_solutions_light_mode.png`}
           darkVariantSrc={`/assets/experiences/cosden_solutions_dark_mode.png`}
@@ -109,7 +109,7 @@ function ExperienceSection() {
           width={300}
           height={64}
         />
-      </MarqueeList>
+      </Marquee>
 
       <p className="mb-10 text-center text-2xl font-medium text-foreground">
         {t("testimonialsTitle")}
