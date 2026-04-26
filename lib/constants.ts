@@ -11,7 +11,7 @@ export const KEY_MAP = {
 type SectionIdMap = Record<string, string>
 
 export const SECTION_ID_MAP = {
-  home: `home`,
+  about: `about`,
   experience: `experience`,
 } as const satisfies SectionIdMap
 

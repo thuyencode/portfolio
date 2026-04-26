@@ -1,7 +1,6 @@
 {
   "page": {
     "Home": {
-      "title": "Xin chào!",
       "name": "Trần Văn Thuyên",
       "jobTitle": "Lập trình viên fullstack",
       "experienceTitle": "Kinh nghiệm thực tế",
@@ -16,7 +15,7 @@
   },
   "component": {
     "NavLinks": {
-      "home": "Trang chủ",
+      "about": "Giới thiệu",
       "contact": "Liên hệ",
       "projects": "Dự án",
       "skills": "Kỹ năng",

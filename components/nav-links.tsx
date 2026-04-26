@@ -9,7 +9,7 @@ export function NavLinks() {
 
   return (
     <nav className="space-x-1">
-      <HashLink href={`#${SECTION_ID_MAP.home}`}>{t("home")}</HashLink>
+      <HashLink href={`#${SECTION_ID_MAP.about}`}>{t("about")}</HashLink>
       <HashLink href={`#${SECTION_ID_MAP.experience}`}>
         {t("experiences")}
       </HashLink>

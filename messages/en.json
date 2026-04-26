@@ -1,7 +1,6 @@
 {
   "page": {
     "Home": {
-      "title": "Hello world!",
       "name": "Tran Van Thuyen",
       "jobTitle": "Fullstack Developer",
       "experienceTitle": "Real-world experience",
@@ -16,7 +15,7 @@
   },
   "component": {
     "NavLinks": {
-      "home": "Home",
+      "about": "About",
       "contact": "Contact",
       "projects": "Projects",
       "skills": "Skills",

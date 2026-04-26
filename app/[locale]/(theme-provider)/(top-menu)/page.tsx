@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <>
       <main className="min-h-dvh scroll-smooth px-10">
-        <HomeSection />
+        <AboutSection />
         <ExperienceSection />
       </main>
 
@@ -27,20 +27,16 @@ export default function HomePage() {
   )
 }
 
-function HomeSection() {
+function AboutSection() {
   const t = useTranslations("page.Home")
 
   return (
     <section
-      className="mx-auto flex max-w-4xl items-center justify-center gap-10 pt-28"
-      id={SECTION_ID_MAP.home}
+      className="mx-auto flex max-w-3xl items-center justify-center pt-28"
+      id={SECTION_ID_MAP.about}
     >
       <div className="space-y-5">
         <h1 className="uppercase">{t("name")}</h1>
-
-        <p className="text-xl font-semibold tracking-wide text-accent capitalize italic underline underline-offset-[6px]">
-          {t("jobTitle")}
-        </p>
 
         <p className="leading-8 font-medium">
           {t("descriptionBeforeJs")}
@@ -73,8 +69,8 @@ function HomeSection() {
       <Image
         src={`/assets/avatar.jpg`}
         alt="A picture of me"
-        width={400}
-        height={450}
+        width={300}
+        height={337}
         className="h-auto rounded-3xl shadow-lg"
         loading="eager"
       />
