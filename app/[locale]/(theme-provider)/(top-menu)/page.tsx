@@ -74,7 +74,7 @@ function HomeSection() {
         src={`/assets/avatar.jpg`}
         alt="A picture of me"
         width={400}
-        height={400}
+        height={450}
         className="h-auto rounded-3xl shadow-lg"
         loading="eager"
       />
