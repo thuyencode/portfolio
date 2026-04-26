@@ -10,7 +10,7 @@ import { CompanyLogo } from "@/components/company-logo"
 import { KeymapModal } from "@/components/keymap-modal"
 import { Marquee } from "@/components/marquee"
 import { SECTION_ID_MAP } from "@/lib/constants"
-import { Chip } from "@heroui/react"
+import { Link } from "@heroui/react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 
@@ -32,38 +32,37 @@ function AboutSection() {
 
   return (
     <section
-      className="mx-auto flex max-w-3xl items-center justify-center pt-28"
+      className="mx-auto flex max-w-5xl items-center justify-center pt-28"
       id={SECTION_ID_MAP.about}
     >
       <div className="space-y-5">
         <h1 className="uppercase">{t("name")}</h1>
 
-        <p className="leading-8 font-medium">
-          {t("descriptionBeforeJs")}
+        <p className="space-y-2.5 leading-8 *:inline-block">
+          <span className="font-medium">
+            <span className="text-foreground">{t("jobTitle")}</span>{" "}
+            {t("aboutHas")}{" "}
+            <Link
+              className="inline text-lg text-balance text-muted"
+              href={`#${SECTION_ID_MAP.experience}`}
+            >
+              <span className="text-foreground">{t("aboutExperience")}</span>
+              {t("aboutCollaboratingWith")}
+              <span className="text-foreground">{t("aboutRealProjects")}</span>
+              <Link.Icon className="align-middle" />
+            </Link>
+            {t("aboutFocusedOn")}{" "}
+            <Link
+              className="inline text-lg text-balance"
+              href={`#${SECTION_ID_MAP.skills}`}
+            >
+              TypeScript và React
+              <Link.Icon className="align-middle" />
+            </Link>
+            .
+          </span>
 
-          <Chip variant="primary" color="warning">
-            <Chip.Label className="text-base text-accent-foreground">
-              JavaScript
-            </Chip.Label>
-          </Chip>
-
-          {t("descriptionBetweenJsTs")}
-
-          <Chip variant="primary" color="accent">
-            <Chip.Label className="text-base text-accent-foreground">
-              TypeScript
-            </Chip.Label>
-          </Chip>
-
-          {t("descriptionBetweenTsReact")}
-
-          <Chip variant="primary" color="accent">
-            <Chip.Label className="text-base text-accent-foreground">
-              React
-            </Chip.Label>
-          </Chip>
-
-          {t("descriptionAfterReact")}
+          <span>{t("aboutBackground")}</span>
         </p>
       </div>
       <Image

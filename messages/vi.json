@@ -2,11 +2,17 @@
   "page": {
     "Home": {
       "name": "Trần Văn Thuyên",
-      "jobTitle": "Lập trình viên fullstack",
+      "jobTitle": "Lập trình viên Fullstack",
       "experienceTitle": "Kinh nghiệm thực tế",
       "placeholderText": "Đây có thể là bạn",
       "testimonialsTitle": "Một vài lời từ các nhà tuyển dụng và đối tác trong quá khứ",
       "testimonialCosden": "I worked with Thuyen on an educational platform for Cosden Solutions for a couple of months. I can say that Thuyen is a great developer with a lot of potential. He is very thorough, learns quickly, and produces very good work. I have given him tough challenges to face, some even beyond his current skillset, and he has risen to face those challenges and succeeded every time. Working with Thuyen is really easy. He is great at communication, will reach out when needed, and won't waste anyone's time. He is independent, and can handle tough problems and find solutions to them. He is also a great learner, which will make a very good investment as a developer. I'm sure he will grow and achieve great things. I would absolutely recommend Thuyen for any developer position as I genuinely think he will be an incredibly valuable resource!",
+      "aboutHas": "có",
+      "aboutExperience": "kinh nghiệm",
+      "aboutCollaboratingWith": " cộng tác và làm việc với ",
+      "aboutRealProjects": "dự án thật",
+      "aboutFocusedOn": ". Tập trung vào các thư viện và framework xung quanh ",
+      "aboutBackground": "Mình bắt đầu quan tâm về công nghệ web từ lần đầu tiếp xúc với máy tính hồi cấp 3. Từ đó bắt đầu tự học và đăng ký theo đuổi ngành kỹ thuật phần mềm cho đến bây giờ.",
       "descriptionBeforeJs": "Lập trình viên fullstack ",
       "descriptionBetweenJsTs": "/",
       "descriptionBetweenTsReact": ", chuyên sâu về ",
