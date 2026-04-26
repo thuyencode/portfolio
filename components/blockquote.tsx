@@ -16,7 +16,7 @@ export function Blockquote({
 }: BlockquoteProps) {
   return (
     <figure className="mx-auto max-w-3xl space-y-6">
-      <QuoteIcon className="mx-auto size-9 fill-muted text-muted" />
+      <QuoteIcon className="mx-auto size-9 fill-muted text-transparent" />
 
       <blockquote>
         <p className="text-center text-muted">&quot;{testimonial}&quot;</p>
