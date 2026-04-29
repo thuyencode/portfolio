@@ -11,6 +11,16 @@ const nextConfig: NextConfig = {
         hostname: "placehold.co",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "go-skill-icons.vercel.app",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.emoji.family",
+        pathname: "/**",
+      },
     ],
   },
 }
