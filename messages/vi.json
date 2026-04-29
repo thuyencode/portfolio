@@ -16,7 +16,16 @@
       "descriptionBeforeJs": "Lập trình viên fullstack ",
       "descriptionBetweenJsTs": "/",
       "descriptionBetweenTsReact": ", chuyên sâu về ",
-      "descriptionAfterReact": " với gần 2 năm kinh nghiệm cùng kinh nghiệm làm dự án thực tế."
+      "descriptionAfterReact": " với gần 2 năm kinh nghiệm cùng kinh nghiệm làm dự án thực tế.",
+      "skillsTitle": "Bộ kỹ năng",
+      "skillsSelfLearningPrefix": "Có khả năng tự học, ",
+      "skillsSelfLearningLink": "giao tiếp bằng tiếng Anh và cộng tác tốt",
+      "skillsMainLangPrefix": "Ngôn ngữ chính là ",
+      "skillsMainLangReason": " vì trải nghiệm lập trình tốt hơn, an toàn hơn so với ",
+      "skillsMainLangSuffix": " và có nhiều điểm vay mượn từ Java, ngôn ngữ mình được học trong chương trình kỹ sư phần mềm. Có kinh nghiệm với các thư viện và framework JavaScript/TypeScript từ mảng backend như ",
+      "skillsFrontendPrefix": "... cho đến mảng frontend như ",
+      "skillsStrengthPrefix": "Có thế mạnh và thông thạo nhất về hệ sinh thái ",
+      "skillsStrengthSuffix": ", bao gồm các thư viện và framework như "
     }
   },
   "component": {

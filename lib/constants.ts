@@ -13,6 +13,7 @@ type SectionIdMap = Record<string, string>
 export const SECTION_ID_MAP = {
   about: `about`,
   experience: `experience`,
+  skills: `skills`,
 } as const satisfies SectionIdMap
 
 export const EXPERIENCES = ["cosden_code"] as const

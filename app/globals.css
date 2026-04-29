@@ -53,4 +53,8 @@
   .glassmorphism {
     @apply border border-solid border-foreground/25 bg-background/50 shadow-lg backdrop-blur-lg;
   }
+
+  .orbiting-circles-container {
+    @apply relative flex flex-col items-center justify-center;
+  }
 }

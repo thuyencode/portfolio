@@ -16,7 +16,16 @@
       "descriptionBeforeJs": "A ",
       "descriptionBetweenJsTs": "/",
       "descriptionBetweenTsReact": " fullstack developer, with deep expertise in ",
-      "descriptionAfterReact": " and nearly 2 years of experience along with real-world project experience."
+      "descriptionAfterReact": " and nearly 2 years of experience along with real-world project experience.",
+      "skillsTitle": "Skill Set",
+      "skillsSelfLearningPrefix": "Self-learning ability, ",
+      "skillsSelfLearningLink": "good English communication and collaboration",
+      "skillsMainLangPrefix": "Primary language is ",
+      "skillsMainLangReason": " for better developer experience, type safety over ",
+      "skillsMainLangSuffix": ", with many concepts borrowed from Java — the language I studied in my software engineering program. Experienced with JavaScript/TypeScript libraries and frameworks from the backend side like ",
+      "skillsFrontendPrefix": "... to the frontend side such as ",
+      "skillsStrengthPrefix": "Strongest and most proficient in the ",
+      "skillsStrengthSuffix": " ecosystem, including libraries and frameworks like "
     }
   },
   "component": {
