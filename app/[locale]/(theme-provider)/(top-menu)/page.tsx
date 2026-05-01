@@ -18,7 +18,7 @@ import Image from "next/image"
 export default function HomePage() {
   return (
     <>
-      <main className="min-h-dvh scroll-smooth px-10">
+      <main className="min-h-dvh px-10">
         <AboutSection />
         <ExperienceSection />
         <SkillsSection />

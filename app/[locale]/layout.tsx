@@ -5,6 +5,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl"
 import { setRequestLocale } from "next-intl/server"
 import { Geist_Mono, Inter, Nunito_Sans } from "next/font/google"
 import { notFound } from "next/navigation"
+
 import "../globals.css"
 
 const nunitoSansHeading = Nunito_Sans({

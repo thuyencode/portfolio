@@ -27,7 +27,9 @@ export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
         </div>
       </div>
 
-      <ScrollShadow className="max-h-dvh">{children}</ScrollShadow>
+      <ScrollShadow className="max-h-dvh scroll-smooth">
+        {children}
+      </ScrollShadow>
     </>
   )
 }
