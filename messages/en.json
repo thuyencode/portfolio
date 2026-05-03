@@ -68,6 +68,22 @@
       "openKeymap": "Open keymap",
       "switchLocale": "Switch locale",
       "switchTheme": "Switch theme"
+    },
+    "ContactForm": {
+      "emailLabel": "Your email",
+      "nameLabel": "Your name",
+      "subjectLabel": "Subject",
+      "subjectOptional": "(optional)",
+      "subjectPlaceholder": "e.g. Freelance Offer, Job Offer, Interview Invitation...",
+      "messageLabel": "Message",
+      "successTitle": "Message sent!",
+      "errorTitle": "Something went wrong",
+      "successDescription": "Thank you for reaching out. I'll get back to you as soon as possible.",
+      "errorDescription": "The server returned the following errors:",
+      "retry": "Retry",
+      "sending": "Sending...",
+      "send": "Send",
+      "reset": "Reset"
     }
   }
 }

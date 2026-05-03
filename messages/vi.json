@@ -68,6 +68,22 @@
       "openKeymap": "Mở bản đồ phím",
       "switchLocale": "Chuyển ngôn ngữ",
       "switchTheme": "Chuyển màu giao diện"
+    },
+    "ContactForm": {
+      "emailLabel": "Email của bạn",
+      "nameLabel": "Tên của bạn",
+      "subjectLabel": "Chủ đề",
+      "subjectOptional": "(không bắt buộc)",
+      "subjectPlaceholder": "VD: Ưu đãi Freelance, Cơ hội việc làm, Lời mời phỏng vấn...",
+      "messageLabel": "Tin nhắn",
+      "successTitle": "Đã gửi tin nhắn!",
+      "errorTitle": "Có lỗi xảy ra",
+      "successDescription": "Cảm ơn bạn đã liên hệ. Mình sẽ phản hồi sớm nhất có thể.",
+      "errorDescription": "Máy chủ trả về các lỗi sau:",
+      "retry": "Thử lại",
+      "sending": "Đang gửi...",
+      "send": "Gửi",
+      "reset": "Đặt lại"
     }
   }
 }
