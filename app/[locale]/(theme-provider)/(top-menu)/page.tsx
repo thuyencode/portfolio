@@ -58,8 +58,7 @@ function AboutSection() {
               className="inline text-lg text-balance"
               href={`#${SECTION_ID_MAP.skills}`}
             >
-              TypeScript và React
-              <Link.Icon className="align-middle" />
+              {t("aboutTsReact")} <Link.Icon className="align-middle" />
             </Link>
             .
           </span>
