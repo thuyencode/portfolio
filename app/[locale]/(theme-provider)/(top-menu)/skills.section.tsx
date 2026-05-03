@@ -1,7 +1,7 @@
 import { OrbitingCircles } from "@/components/orbiting-circles"
 import { type SkillIconProps, SkillIcon } from "@/components/skill-icon"
 import { SECTION_ID_MAP } from "@/lib/constants"
-import { Link } from "@heroui/react"
+import { Link, ScrollShadow } from "@heroui/react"
 import { useTranslations } from "next-intl"
 
 const softSkillIcons: SkillIconProps[] = [
@@ -114,7 +114,7 @@ export function SkillsSection() {
         </p>
       </div>
 
-      <div className="h-87.5 w-full overflow-hidden">
+      <ScrollShadow className="h-87.5 w-full overflow-hidden">
         <div className="orbiting-circles-container h-187.5 w-full justify-start">
           <OrbitingCircles radius={125} iconSize={60} doubleChildren>
             {softSkillIcons.map((icon) => (
@@ -134,7 +134,7 @@ export function SkillsSection() {
             ))}
           </OrbitingCircles>
         </div>
-      </div>
+      </ScrollShadow>
     </section>
   )
 }
