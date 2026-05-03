@@ -30,8 +30,8 @@ export async function submitContactFormAction(
   }
 
   const { error } = await resend.emails.send({
-    from: process.env.RESEND_EMAIL_FROM!,
-    to: process.env.MY_EMAIL!,
+    from: process.env.RESEND_EMAIL_FROM,
+    to: process.env.MY_EMAIL,
     subject: `${result.output.contact_name ? result.output.contact_name + " " : ""}<${result.output.contact_email}> ${
       result.output.contact_subject ??
       result.output.contact_message.slice(0, 20)
