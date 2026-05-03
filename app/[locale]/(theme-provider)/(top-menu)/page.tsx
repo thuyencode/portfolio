@@ -70,7 +70,7 @@ function AboutSection() {
         src={process.env.NEXT_PUBLIC_AVATAR_URL!}
         alt="A picture of me"
         width={300}
-        height={337}
+        height={0}
         className="h-auto rounded-3xl shadow-lg"
       />
     </section>
