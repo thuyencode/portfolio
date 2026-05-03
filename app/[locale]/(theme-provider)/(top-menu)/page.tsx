@@ -67,7 +67,7 @@ function AboutSection() {
         </p>
       </div>
       <Image
-        src={`/assets/avatar.jpg`}
+        src={process.env.NEXT_PUBLIC_AVATAR_URL!}
         alt="A picture of me"
         width={300}
         height={337}
