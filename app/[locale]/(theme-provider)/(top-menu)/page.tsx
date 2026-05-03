@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/carousel"
 import { CompanyLogo } from "@/components/company-logo"
+import { ContactForm } from "@/components/contact-form"
 import { KeymapModal } from "@/components/keymap-modal"
 import { Marquee } from "@/components/marquee"
 import { SECTION_ID_MAP } from "@/lib/constants"
@@ -22,6 +23,7 @@ export default function HomePage() {
         <AboutSection />
         <ExperienceSection />
         <SkillsSection />
+        <ContactSection />
       </main>
 
       <KeymapModal />
@@ -140,6 +142,21 @@ function ExperienceSection() {
         <CarouselPrevious variant="secondary" />
         <CarouselNext variant="secondary" />
       </Carousel>
+    </section>
+  )
+}
+
+function ContactSection() {
+  return (
+    <section
+      className="mx-auto h-dvh max-w-xl space-y-10 pt-28"
+      id={SECTION_ID_MAP.contact}
+    >
+      <h2 className="text-center text-2xl tracking-wide uppercase">
+        Contact me
+      </h2>
+
+      <ContactForm />
     </section>
   )
 }
