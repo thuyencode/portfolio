@@ -13,7 +13,7 @@ type SubmitContactFormReturn = {
   success: boolean
   errors?: FlatErrors<typeof ContactFormSchema>
   fields: ContactFormInput
-} | null
+}
 
 export async function submitContactFormAction(
   _prevState: unknown,
