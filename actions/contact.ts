@@ -1,5 +1,6 @@
 "use server"
 
+import ContactEmailTemplate from "@/components/contact-email-template"
 import { parseFormData } from "@/lib/utils"
 import { type ContactFormInput, ContactFormSchema } from "@/schemas"
 import { getLocale } from "next-intl/server"
@@ -29,20 +30,39 @@ export async function submitContactFormAction(
     return { success: false, errors: flattened, fields }
   }
 
-  const { error } = await resend.emails.send({
-    from: process.env.RESEND_EMAIL_FROM,
-    to: process.env.MY_EMAIL,
-    subject: `${result.output.contact_name ? result.output.contact_name + " " : ""}<${result.output.contact_email}> ${
-      result.output.contact_subject ??
-      result.output.contact_message.slice(0, 20)
-    }`,
-    html: result.output.contact_message,
-  })
+  const from = result.output.contact_name
+    ? `${result.output.contact_name} <${process.env.RESEND_EMAIL_FROM}>`
+    : process.env.RESEND_EMAIL_FROM
 
-  if (error) {
+  const subject =
+    result.output.contact_subject ?? result.output.contact_message.slice(0, 20)
+
+  try {
+    const { error } = await resend.emails.send({
+      from,
+      to: process.env.MY_EMAIL,
+      subject,
+      react: ContactEmailTemplate({
+        contactName: result.output.contact_name,
+        contactEmail: result.output.contact_email,
+        subject,
+        message: result.output.contact_message,
+      }),
+    })
+
+    if (error) {
+      return {
+        success: false,
+        errors: { root: [error.message] },
+        fields: result.output,
+      }
+    }
+  } catch (error: unknown) {
     return {
       success: false,
-      errors: { root: [error.message] },
+      errors: {
+        root: [error instanceof Error ? error.message : String(error)],
+      },
       fields: result.output,
     }
   }
