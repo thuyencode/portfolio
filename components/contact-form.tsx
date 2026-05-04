@@ -73,6 +73,7 @@ export function ContactForm() {
           aria-invalid={!!nameErrors}
           variant="secondary"
           className="peer"
+          maxLength={100}
         />
         <ErrorMessage className="hidden peer-aria-invalid:inline">
           <FieldError errors={nameErrors} />
@@ -93,6 +94,7 @@ export function ContactForm() {
           placeholder={t("subjectPlaceholder")}
           variant="secondary"
           className="peer"
+          maxLength={200}
         />
         <ErrorMessage className="hidden peer-aria-invalid:inline">
           <FieldError errors={subjectErrors} />
@@ -111,6 +113,8 @@ export function ContactForm() {
           aria-invalid={!!messageErrors}
           variant="secondary"
           required
+          minLength={1}
+          maxLength={1000}
         />
         <ErrorMessage className="hidden peer-aria-invalid:inline">
           <FieldError errors={messageErrors} />
