@@ -36,4 +36,7 @@ pnpm-debug.log*
 next-env.d.ts
 
 # Avatar image
-assets/avatar.*
+public/assets/avatar.*
+
+# Zalo QR image
+public/assets/contacts/zalo-qr.*

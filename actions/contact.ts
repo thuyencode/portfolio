@@ -40,7 +40,7 @@ export async function submitContactFormAction(
   try {
     const { error } = await resend.emails.send({
       from,
-      to: process.env.MY_EMAIL,
+      to: process.env.NEXT_PUBLIC_MY_EMAIL,
       subject,
       react: ContactEmailTemplate({
         contactName: result.output.contact_name,
