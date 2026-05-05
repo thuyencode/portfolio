@@ -26,7 +26,10 @@
       "skillsMainLangSuffix": ", with many concepts borrowed from Java — the language I studied in my software engineering program. Experienced with JavaScript/TypeScript libraries and frameworks from the backend side like ",
       "skillsFrontendPrefix": "... to the frontend side such as ",
       "skillsStrengthPrefix": "Strongest and most proficient in the ",
-      "skillsStrengthSuffix": " ecosystem, including libraries and frameworks like "
+      "skillsStrengthSuffix": " ecosystem, including libraries and frameworks like ",
+      "contactTitle": "Contact me",
+      "emailPrompt": "You can send an email to",
+      "emailBelow": "right below"
     }
   },
   "component": {
@@ -84,6 +87,11 @@
       "sending": "Sending...",
       "send": "Send",
       "reset": "Reset"
+    },
+    "ZaloModal": {
+      "title": "Contact via Zalo",
+      "description": "Scan this QR code with your Zalo app to make a contact with me.",
+      "openInZalo": "Open in Zalo"
     }
   }
 }

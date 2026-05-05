@@ -8,8 +8,12 @@ import {
 } from "@/components/carousel"
 import { CompanyLogo } from "@/components/company-logo"
 import { ContactForm } from "@/components/contact-form"
+import { CopyButton } from "@/components/copy-button"
 import { KeymapModal } from "@/components/keymap-modal"
 import { Marquee } from "@/components/marquee"
+import { SkillIcon } from "@/components/skill-icon"
+import { ZaloModal } from "@/components/zalo-modal"
+import { ZaloModalOpener } from "@/components/zalo-modal-opener"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { Link } from "@heroui/react"
 import { useTranslations } from "next-intl"
@@ -27,6 +31,7 @@ export default function HomePage() {
       </main>
 
       <KeymapModal />
+      <ZaloModal />
     </>
   )
 }
@@ -148,14 +153,54 @@ function ExperienceSection() {
 }
 
 function ContactSection() {
+  const t = useTranslations("page.Home")
+
   return (
     <section
       className="mx-auto max-w-xl space-y-10"
       id={SECTION_ID_MAP.contact}
     >
       <h2 className="text-center text-2xl tracking-wide uppercase">
-        Contact me
+        {t("contactTitle")}
       </h2>
+
+      <ul className="space-x-2.5 text-center">
+        <li className="group inline-block">
+          <a href={process.env.NEXT_PUBLIC_MY_GITHUB} target="_blank">
+            <SkillIcon
+              src="https://go-skill-icons.vercel.app/api/icons?i=github"
+              alt="GitHub"
+              className="duration-150 ease-in-out group-hover:-translate-y-1.5"
+              size={40}
+            />
+          </a>
+        </li>
+        <li className="group inline-block">
+          <a href={process.env.NEXT_PUBLIC_MY_FACEBOOK} target="_blank">
+            <SkillIcon
+              src="https://go-skill-icons.vercel.app/api/icons?i=facebook"
+              alt="Facebook"
+              className="duration-150 ease-in-out group-hover:-translate-y-1.5"
+              size={40}
+            />
+          </a>
+        </li>
+        <li className="group inline-block">
+          <ZaloModalOpener
+            iconProps={{
+              className:
+                "duration-150 ease-in-out group-hover:-translate-y-1.5",
+              size: 40,
+            }}
+          />
+        </li>
+      </ul>
+
+      <div className="space-y-2.5 text-center">
+        <p className="font-medium text-foreground">{t("emailPrompt")}</p>
+        <CopyButton text={process.env.NEXT_PUBLIC_MY_EMAIL} />
+        <p className="font-medium text-foreground">{t("emailBelow")}</p>
+      </div>
 
       <ContactForm />
     </section>

@@ -26,7 +26,10 @@
       "skillsMainLangSuffix": " và có nhiều điểm vay mượn từ Java, ngôn ngữ mình được học trong chương trình kỹ sư phần mềm. Có kinh nghiệm với các thư viện và framework JavaScript/TypeScript từ mảng backend như ",
       "skillsFrontendPrefix": "... cho đến mảng frontend như ",
       "skillsStrengthPrefix": "Có thế mạnh và thông thạo nhất về hệ sinh thái ",
-      "skillsStrengthSuffix": ", bao gồm các thư viện và framework như "
+      "skillsStrengthSuffix": ", bao gồm các thư viện và framework như ",
+      "contactTitle": "Liên hệ với mình",
+      "emailPrompt": "Có thể gửi email tới địa chỉ",
+      "emailBelow": "ngay dưới đây"
     }
   },
   "component": {
@@ -84,6 +87,11 @@
       "sending": "Đang gửi...",
       "send": "Gửi",
       "reset": "Đặt lại"
+    },
+    "ZaloModal": {
+      "title": "Liên hệ qua Zalo",
+      "description": "Quét mã QR này bằng ứng dụng Zalo để kết nối với mình.",
+      "openInZalo": "Mở trong Zalo"
     }
   }
 }
