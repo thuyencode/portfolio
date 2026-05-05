@@ -19,7 +19,7 @@ import { SkillsSection } from "./skills.section"
 export default function HomePage() {
   return (
     <>
-      <main className="min-h-dvh px-10">
+      <main className="space-y-28">
         <AboutSection />
         <ExperienceSection />
         <SkillsSection />
@@ -36,7 +36,7 @@ function AboutSection() {
 
   return (
     <section
-      className="mx-auto flex max-w-5xl items-center justify-center pt-28"
+      className="mx-auto mt-28 flex max-w-5xl items-center justify-center"
       id={SECTION_ID_MAP.about}
     >
       <div className="space-y-5">
@@ -85,7 +85,7 @@ function ExperienceSection() {
 
   return (
     <section
-      className="mx-auto h-dvh max-w-6xl space-y-10 pt-28"
+      className="mx-auto max-w-6xl space-y-10"
       id={SECTION_ID_MAP.experience}
     >
       <h2 className="text-center text-2xl tracking-wide uppercase">
@@ -150,7 +150,7 @@ function ExperienceSection() {
 function ContactSection() {
   return (
     <section
-      className="mx-auto h-dvh max-w-xl space-y-10 pt-28"
+      className="mx-auto max-w-xl space-y-10"
       id={SECTION_ID_MAP.contact}
     >
       <h2 className="text-center text-2xl tracking-wide uppercase">

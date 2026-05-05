@@ -68,7 +68,7 @@ export function SkillsSection() {
 
   return (
     <section
-      className="mx-auto max-w-6xl space-y-10 pt-28"
+      className="mx-auto max-w-6xl space-y-10"
       id={SECTION_ID_MAP.skills}
     >
       <h2 className="text-center text-2xl tracking-wide uppercase">
