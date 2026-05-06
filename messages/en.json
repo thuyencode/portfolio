@@ -29,7 +29,15 @@
       "skillsStrengthSuffix": " ecosystem, including libraries and frameworks like ",
       "contactTitle": "Contact me",
       "emailPrompt": "You can send an email to",
-      "emailBelow": "right below"
+      "emailBelow": "right below",
+      "educationTitle": "Education",
+      "educationFunixSoftware": "Software Engineering Program",
+      "educationFunixBlockchain": "xSeries Program: Blockchain Developer",
+      "educationFunixGraduation": "Graduated from FUNiX",
+      "educationStartDate": "May 10, 2021",
+      "educationBlockchainDate": "December 23, 2024",
+      "educationGraduationDate": "July 27, 2025",
+      "educationStudiedAt": "Studied at FUNiX"
     }
   },
   "component": {
@@ -38,7 +46,8 @@
       "contact": "Contact",
       "projects": "Projects",
       "skills": "Skills",
-      "experiences": "Experiences"
+      "experiences": "Experiences",
+      "education": "Education"
     },
     "LanguageSwitcher": {
       "languageCode": {

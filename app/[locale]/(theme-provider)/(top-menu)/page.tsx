@@ -27,6 +27,7 @@ export default function HomePage() {
         <AboutSection />
         <ExperienceSection />
         <SkillsSection />
+        <EducationSection />
         <ContactSection />
       </main>
 
@@ -148,6 +149,80 @@ function ExperienceSection() {
         <CarouselPrevious variant="secondary" />
         <CarouselNext variant="secondary" />
       </Carousel>
+    </section>
+  )
+}
+
+function EducationSection() {
+  const t = useTranslations("page.Home")
+
+  return (
+    <section
+      className="mx-auto max-w-3xl space-y-10"
+      id={SECTION_ID_MAP.education}
+    >
+      <h2 className="text-center text-2xl tracking-wide uppercase">
+        {t("educationTitle")}
+      </h2>
+      <ul className="d-timeline d-timeline-vertical d-timeline-snap-icon max-md:d-timeline-compact">
+        <li>
+          <div className="d-timeline-middle">
+            <Image
+              src="/assets/education/funix-favicon-mascot.png"
+              alt="FUNiX's mascot"
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="d-timeline-start md:mb-10 md:text-end">
+            <time className="font-mono italic">{t("educationStartDate")}</time>
+            <h3 className="text-lg font-black">{t("educationStudiedAt")}</h3>
+            {t("educationFunixSoftware")}.
+          </div>
+          <hr className="bg-default" />
+        </li>
+
+        <li>
+          <hr className="bg-default" />
+          <div className="d-timeline-middle">
+            <Image
+              src="/assets/education/funix-favicon-mascot.png"
+              alt="FUNiX's mascot"
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="d-timeline-end md:mb-10">
+            <time className="font-mono italic">
+              {t("educationBlockchainDate")}
+            </time>
+            <h3 className="text-lg font-black">{t("educationStudiedAt")}</h3>
+            {t("educationFunixBlockchain")}.
+          </div>
+          <hr className="bg-default" />
+        </li>
+
+        <li>
+          <hr className="bg-default" />
+          <div className="d-timeline-middle">
+            <Image
+              src="/assets/education/funix-favicon-mascot.png"
+              alt="FUNiX's mascot"
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="d-timeline-start">
+            <time className="font-mono italic">
+              {t("educationGraduationDate")}
+            </time>
+            <h3 className="text-lg font-black">
+              {t("educationFunixGraduation")}
+            </h3>
+          </div>
+          <hr className="bg-default" />
+        </li>
+      </ul>{" "}
     </section>
   )
 }

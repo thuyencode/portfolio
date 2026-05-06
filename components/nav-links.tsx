@@ -17,6 +17,9 @@ export function NavLinks() {
         {t("projects")}
       </Link>
       <HashLink href={`#${SECTION_ID_MAP.skills}`}>{t("skills")}</HashLink>
+      <HashLink href={`#${SECTION_ID_MAP.education}`}>
+        {t("education")}
+      </HashLink>
       <HashLink href={`#${SECTION_ID_MAP.contact}`}>{t("contact")}</HashLink>
     </nav>
   )

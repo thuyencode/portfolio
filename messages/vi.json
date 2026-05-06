@@ -29,7 +29,15 @@
       "skillsStrengthSuffix": ", bao gồm các thư viện và framework như ",
       "contactTitle": "Liên hệ với mình",
       "emailPrompt": "Có thể gửi email tới địa chỉ",
-      "emailBelow": "ngay dưới đây"
+      "emailBelow": "ngay dưới đây",
+      "educationTitle": "Học vấn",
+      "educationFunixSoftware": "Chương trình Kỹ sư phần mềm",
+      "educationFunixBlockchain": "Chương trình xSeries: Lập trình viên Blockchain",
+      "educationFunixGraduation": "Tốt nghiệp FUNiX",
+      "educationStartDate": "10 Tháng 5, 2021",
+      "educationBlockchainDate": "23 Tháng 12, 2024",
+      "educationGraduationDate": "27 Tháng 7, 2025",
+      "educationStudiedAt": "Học tại FUNiX"
     }
   },
   "component": {
@@ -38,7 +46,8 @@
       "contact": "Liên hệ",
       "projects": "Dự án",
       "skills": "Kỹ năng",
-      "experiences": "Kinh nghiệm"
+      "experiences": "Kinh nghiệm",
+      "education": "Học vấn"
     },
     "LanguageSwitcher": {
       "languageCode": {

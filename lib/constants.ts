@@ -14,6 +14,7 @@ export const SECTION_ID_MAP = {
   about: `about`,
   experience: `experience`,
   skills: `skills`,
+  education: `education`,
   contact: `contact`,
 } as const satisfies SectionIdMap
 

@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import "@heroui/styles";
 
+@plugin "daisyui" {
+  themes: false;
+  prefix: "d-";
+  include:
+    timeline, timeline-start, timeline-middle, timeline-end, timeline-snap-icon,
+    timeline-box, timeline-compact, timeline-horizontal, timeline-vertical;
+  logs: false;
+}
+
 @theme inline {
   --animate-marquee: marquee var(--duration) infinite linear;
   --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
@@ -43,6 +52,9 @@
   }
   h2 {
     @apply text-xl font-semibold tracking-tight text-foreground sm:text-2xl lg:text-3xl;
+  }
+  h3 {
+    @apply text-lg font-medium tracking-tight text-foreground sm:text-xl lg:text-2xl;
   }
   p {
     @apply text-lg text-balance text-muted;
