@@ -38,8 +38,7 @@ export function ThemeChanger({ children }: React.PropsWithChildren) {
           <span>
             {t("tooltipPrefix")}{" "}
             <Kbd>
-              <Kbd.Abbr keyValue={KEY_MAP.switchTheme[0]} />
-              <Kbd.Content>{KEY_MAP.switchTheme[1]}</Kbd.Content>
+              <Kbd.Content>{KEY_MAP.switchTheme}</Kbd.Content>
             </Kbd>{" "}
             {t("tooltipSuffix")}
           </span>

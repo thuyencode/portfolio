@@ -14,7 +14,7 @@ export function ZaloModal() {
     "true"
   )
 
-  useHotkey("Alt+Z", () => {
+  useHotkey("Z", () => {
     if (hasSaidParam) {
       removeFromRoute()
     } else {

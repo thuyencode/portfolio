@@ -35,8 +35,7 @@ export function LocaleChanger() {
           <span>
             {t("tooltipPrefix")}{" "}
             <Kbd>
-              <Kbd.Abbr keyValue={KEY_MAP.switchLocale[0]} />
-              <Kbd.Content>{KEY_MAP.switchLocale[1]}</Kbd.Content>
+              <Kbd.Content>{KEY_MAP.switchLocale}</Kbd.Content>
             </Kbd>{" "}
             {t("tooltipSuffix")}
           </span>

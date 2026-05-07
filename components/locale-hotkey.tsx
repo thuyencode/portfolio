@@ -8,7 +8,7 @@ export function LocaleHotkey() {
   const locale = useLocale()
   const switchLocale = useLocaleChanger()
 
-  useHotkey("Alt+L", () => {
+  useHotkey("L", () => {
     switch (locale) {
       case "en":
         return switchLocale("vi")

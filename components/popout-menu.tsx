@@ -28,8 +28,7 @@ export function PopoutMenu({ children }: React.PropsWithChildren) {
             >
               <span>{t("keyboardShortcuts")}</span>
               <Kbd className="ml-auto">
-                <Kbd.Abbr keyValue={KEY_MAP.openKeymap[0]} />
-                <Kbd.Content>{KEY_MAP.openKeymap[1]}</Kbd.Content>
+                <Kbd.Content>{KEY_MAP.openKeymap}</Kbd.Content>
               </Kbd>
             </Link>
           </Dropdown.Item>

@@ -6,7 +6,7 @@ import { useTheme } from "@wrksz/themes/client"
 export function ThemeHotkey() {
   const { resolvedTheme, setTheme } = useTheme()
 
-  useHotkey("Alt+D", () => {
+  useHotkey("D", () => {
     setTheme(resolvedTheme === "dark" ? "light" : "dark")
   })
 

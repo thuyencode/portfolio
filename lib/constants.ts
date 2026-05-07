@@ -1,12 +1,12 @@
-import type { KbdKey } from "@heroui/react"
+import type { Key } from "@tanstack/react-hotkeys"
 
-type KeyMap = Record<string, [KbdKey, string]>
+type KeyMap = Record<string, Key>
 
 export const KEY_MAP = {
-  openKeymap: ["alt", ";"],
-  switchLocale: ["alt", "L"],
-  switchTheme: ["alt", "D"],
-  openZalo: ["alt", "Z"],
+  openKeymap: ";",
+  switchLocale: "L",
+  switchTheme: "D",
+  openZalo: "Z",
 } as const satisfies KeyMap
 
 type SectionIdMap = Record<string, string>

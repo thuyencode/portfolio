@@ -14,7 +14,7 @@ export function KeymapModal() {
     "true"
   )
 
-  useHotkey("Alt+;", () => {
+  useHotkey(";", () => {
     if (hasSaidParam) {
       removeFromRoute()
     } else {
@@ -49,32 +49,28 @@ export function KeymapModal() {
                 <li className="flex items-center justify-between">
                   <span>{t("openKeymap")}</span>
                   <Kbd>
-                    <Kbd.Abbr keyValue={KEY_MAP.openKeymap[0]} />
-                    <Kbd.Content>{KEY_MAP.openKeymap[1]}</Kbd.Content>
+                    <Kbd.Content>{KEY_MAP.openKeymap}</Kbd.Content>
                   </Kbd>
                 </li>
 
                 <li className="flex items-center justify-between">
                   <span>{t("switchLocale")}</span>
                   <Kbd>
-                    <Kbd.Abbr keyValue={KEY_MAP.switchLocale[0]} />
-                    <Kbd.Content>{KEY_MAP.switchLocale[1]}</Kbd.Content>
+                    <Kbd.Content>{KEY_MAP.switchLocale}</Kbd.Content>
                   </Kbd>
                 </li>
 
                 <li className="flex items-center justify-between">
                   <span>{t("switchTheme")}</span>
                   <Kbd>
-                    <Kbd.Abbr keyValue={KEY_MAP.switchTheme[0]} />
-                    <Kbd.Content>{KEY_MAP.switchTheme[1]}</Kbd.Content>
+                    <Kbd.Content>{KEY_MAP.switchTheme}</Kbd.Content>
                   </Kbd>
                 </li>
 
                 <li className="flex items-center justify-between">
                   <span>{t("showZalo")}</span>
                   <Kbd>
-                    <Kbd.Abbr keyValue={KEY_MAP.openZalo[0]} />
-                    <Kbd.Content>{KEY_MAP.openZalo[1]}</Kbd.Content>
+                    <Kbd.Content>{KEY_MAP.openZalo}</Kbd.Content>
                   </Kbd>
                 </li>
               </ul>
