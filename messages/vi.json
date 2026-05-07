@@ -37,7 +37,10 @@
       "educationStartDate": "10 Tháng 5, 2021",
       "educationBlockchainDate": "23 Tháng 12, 2024",
       "educationGraduationDate": "27 Tháng 7, 2025",
-      "educationStudiedAt": "Học tại FUNiX"
+      "educationStudiedAt": "Học tại FUNiX",
+      "skillsCodebasePrefix": "Mã nguồn của mình có trên",
+      "skillsCodebaseAnd": "và",
+      "skillsCodebaseSuffix": "."
     }
   },
   "component": {

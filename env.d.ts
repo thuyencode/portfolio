@@ -10,9 +10,11 @@ declare global {
       NEXT_PUBLIC_AVATAR_HEIGHT: `${number}`
       NEXT_PUBLIC_MY_EMAIL: string
       NEXT_PUBLIC_MY_GITHUB: string
+      NEXT_PUBLIC_MY_CODEBERG: string
       NEXT_PUBLIC_MY_FACEBOOK: string
       NEXT_PUBLIC_MY_ZALO_APP_URL: string
       NEXT_PUBLIC_MY_ZALO_QR_URL: string
+      NEXT_PUBLIC_MY_LINKEDIN: string
 
       RESEND_API_KEY: string
       RESEND_EMAIL_FROM: string

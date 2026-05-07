@@ -112,6 +112,36 @@ export function SkillsSection() {
           <span className="text-foreground">React Hook Form</span> and{" "}
           <span className="text-foreground">Next.js</span>.
         </p>
+
+        <p>
+          {t("skillsCodebasePrefix")}{" "}
+          <a
+            href={process.env.NEXT_PUBLIC_MY_GITHUB}
+            target="_blank"
+            className="group align-middle"
+          >
+            <SkillIcon
+              src="https://go-skill-icons.vercel.app/api/icons?i=github"
+              alt="GitHub"
+              className="mx-2 inline-block duration-150 ease-in-out group-hover:scale-110"
+              size={40}
+            />
+          </a>{" "}
+          {t("skillsCodebaseAnd")}{" "}
+          <a
+            href={process.env.NEXT_PUBLIC_MY_CODEBERG}
+            target="_blank"
+            className="group align-middle"
+          >
+            <SkillIcon
+              src="https://go-skill-icons.vercel.app/api/icons?i=codeberg"
+              alt="Codeberg"
+              className="mx-2 inline-block duration-150 ease-in-out group-hover:scale-110"
+              size={40}
+            />
+          </a>
+          {t("skillsCodebaseSuffix")}
+        </p>
       </div>
 
       <ScrollShadow className="h-87.5 w-full overflow-hidden">

@@ -37,7 +37,10 @@
       "educationStartDate": "May 10, 2021",
       "educationBlockchainDate": "December 23, 2024",
       "educationGraduationDate": "July 27, 2025",
-      "educationStudiedAt": "Studied at FUNiX"
+      "educationStudiedAt": "Studied at FUNiX",
+      "skillsCodebasePrefix": "I have my codebase on",
+      "skillsCodebaseAnd": "and",
+      "skillsCodebaseSuffix": " if you're curious."
     }
   },
   "component": {

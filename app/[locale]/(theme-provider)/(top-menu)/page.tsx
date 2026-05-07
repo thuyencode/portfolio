@@ -222,7 +222,7 @@ function EducationSection() {
           </div>
           <hr className="bg-default" />
         </li>
-      </ul>{" "}
+      </ul>
     </section>
   )
 }
@@ -241,12 +241,13 @@ function ContactSection() {
 
       <ul className="space-x-2.5 text-center">
         <li className="group inline-block">
-          <a href={process.env.NEXT_PUBLIC_MY_GITHUB} target="_blank">
+          <a href={process.env.NEXT_PUBLIC_MY_LINKEDIN} target="_blank">
             <SkillIcon
-              src="https://go-skill-icons.vercel.app/api/icons?i=github"
-              alt="GitHub"
+              src="https://go-skill-icons.vercel.app/api/icons?i=linkedin"
+              alt="LinkedIn"
               className="duration-150 ease-in-out group-hover:-translate-y-1.5"
               size={40}
+              loading="lazy"
             />
           </a>
         </li>
@@ -257,6 +258,7 @@ function ContactSection() {
               alt="Facebook"
               className="duration-150 ease-in-out group-hover:-translate-y-1.5"
               size={40}
+              loading="lazy"
             />
           </a>
         </li>
@@ -266,6 +268,7 @@ function ContactSection() {
               className:
                 "duration-150 ease-in-out group-hover:-translate-y-1.5",
               size: 40,
+              loading: "lazy",
             }}
           />
         </li>
