@@ -82,7 +82,8 @@
       "title": "Phím tắt bàn phím",
       "openKeymap": "Mở bản đồ phím",
       "switchLocale": "Chuyển ngôn ngữ",
-      "switchTheme": "Chuyển màu giao diện"
+      "switchTheme": "Chuyển màu giao diện",
+      "showZalo": "Hiện mã QR Zalo"
     },
     "ContactForm": {
       "emailLabel": "Email của bạn",

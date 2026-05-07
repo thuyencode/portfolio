@@ -2,13 +2,25 @@
 
 import { useQueryString } from "@/hooks/use-query-string"
 import { buttonVariants, Modal } from "@heroui/react"
+import { useHotkey } from "@tanstack/react-hotkeys"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { SkillIcon } from "./skill-icon"
 
 export function ZaloModal() {
   const t = useTranslations("component.ZaloModal")
-  const { hasSaidParam, removeFromRoute } = useQueryString("zalo", "true")
+  const { hasSaidParam, removeFromRoute, addToRoute } = useQueryString(
+    "zalo",
+    "true"
+  )
+
+  useHotkey("Alt+Z", () => {
+    if (hasSaidParam) {
+      removeFromRoute()
+    } else {
+      addToRoute()
+    }
+  })
 
   return (
     <Modal>

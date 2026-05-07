@@ -69,6 +69,14 @@ export function KeymapModal() {
                     <Kbd.Content>{KEY_MAP.switchTheme[1]}</Kbd.Content>
                   </Kbd>
                 </li>
+
+                <li className="flex items-center justify-between">
+                  <span>{t("showZalo")}</span>
+                  <Kbd>
+                    <Kbd.Abbr keyValue={KEY_MAP.openZalo[0]} />
+                    <Kbd.Content>{KEY_MAP.openZalo[1]}</Kbd.Content>
+                  </Kbd>
+                </li>
               </ul>
             </Modal.Body>
           </Modal.Dialog>

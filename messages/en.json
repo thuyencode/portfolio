@@ -80,9 +80,10 @@
     },
     "KeymapModal": {
       "title": "Keyboard Shortcuts",
-      "openKeymap": "Open keymap",
+      "openKeymap": "Show keymap",
       "switchLocale": "Switch locale",
-      "switchTheme": "Switch theme"
+      "switchTheme": "Switch theme",
+      "showZalo": "Show Zalo QR code"
     },
     "ContactForm": {
       "emailLabel": "Your email",

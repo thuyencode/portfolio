@@ -6,6 +6,7 @@ export const KEY_MAP = {
   openKeymap: ["alt", ";"],
   switchLocale: ["alt", "L"],
   switchTheme: ["alt", "D"],
+  openZalo: ["alt", "Z"],
 } as const satisfies KeyMap
 
 type SectionIdMap = Record<string, string>
