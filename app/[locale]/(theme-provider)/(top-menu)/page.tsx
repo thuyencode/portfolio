@@ -76,10 +76,10 @@ function AboutSection() {
       </div>
       <Image
         src={process.env.NEXT_PUBLIC_AVATAR_URL}
-        alt="A picture of me"
-        className="h-auto rounded-3xl shadow-lg"
+        alt="A picture of myself"
+        className="aspect-square rounded-3xl object-cover object-[0%_20%] shadow-lg"
         width={process.env.NEXT_PUBLIC_AVATAR_WIDTH}
-        height={process.env.NEXT_PUBLIC_AVATAR_HEIGHT}
+        height={process.env.NEXT_PUBLIC_AVATAR_WIDTH}
         loading="eager"
       />
     </section>
