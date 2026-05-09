@@ -7,25 +7,28 @@ import { ButtonGroup, ScrollShadow } from "@heroui/react"
 export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
   return (
     <>
-      <div className="fixed inset-x-0 top-6 z-10 h-min">
-        <div className="glassmorphism absolute inset-x-0 mx-auto flex w-full max-w-2xl justify-center rounded-3xl p-3">
-          <NavLinks />
+      <header className="fixed inset-x-0 z-10 mx-auto mt-6 flex max-w-5xl items-center justify-between">
+        <div className="flex lg:flex-1">
+          <a href="#" className="-m-1.5 p-1.5">
+            <span className="sr-only">Home</span>
+            <span>Logo</span>
+          </a>
         </div>
 
-        <div className="absolute right-32 flex items-center rounded-3xl p-3">
-          <ButtonGroup>
-            <LocaleChanger />
+        <NavLinks className="glassmorphism flex rounded-3xl px-4 py-2" />
 
-            <ThemeChanger>
-              <ButtonGroup.Separator />
-            </ThemeChanger>
+        <ButtonGroup className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <LocaleChanger />
 
-            <PopoutMenu>
-              <ButtonGroup.Separator />
-            </PopoutMenu>
-          </ButtonGroup>
-        </div>
-      </div>
+          <ThemeChanger>
+            <ButtonGroup.Separator />
+          </ThemeChanger>
+
+          <PopoutMenu>
+            <ButtonGroup.Separator />
+          </PopoutMenu>
+        </ButtonGroup>
+      </header>
 
       <ScrollShadow className="max-h-dvh scroll-pt-28 scroll-smooth">
         {children}
