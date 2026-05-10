@@ -57,7 +57,7 @@
     @apply text-lg font-medium tracking-tight text-foreground sm:text-xl lg:text-2xl;
   }
   p {
-    @apply text-lg text-balance text-muted;
+    @apply text-base text-balance text-muted sm:text-lg;
   }
 }
 

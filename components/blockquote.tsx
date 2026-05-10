@@ -19,7 +19,7 @@ export function Blockquote({
       <QuoteIcon className="mx-auto size-9 fill-muted text-transparent" />
 
       <blockquote>
-        <p className="text-center text-muted">&quot;{testimonial}&quot;</p>
+        <p className="text-center">&quot;{testimonial}&quot;</p>
       </blockquote>
 
       <figcaption className="flex items-center justify-center space-x-3">

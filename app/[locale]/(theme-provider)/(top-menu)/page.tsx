@@ -23,7 +23,7 @@ import { SkillsSection } from "./skills.section"
 export default function HomePage() {
   return (
     <>
-      <main className="space-y-28">
+      <main className="space-y-28 px-4">
         <AboutSection />
         <ExperienceSection />
         <SkillsSection />
@@ -42,7 +42,7 @@ function AboutSection() {
 
   return (
     <section
-      className="mx-auto mt-36 flex max-w-5xl items-center justify-center"
+      className="mx-auto mt-36 flex max-w-5xl flex-col items-center justify-center space-y-5 text-center md:flex-row md:text-left"
       id={SECTION_ID_MAP.about}
     >
       <div className="space-y-5">
@@ -53,7 +53,7 @@ function AboutSection() {
             <span className="text-foreground">{t("jobTitle")}</span>{" "}
             {t("aboutHas")}{" "}
             <Link
-              className="inline text-lg text-balance text-muted"
+              className="inline text-base text-balance text-muted sm:text-lg"
               href={`#${SECTION_ID_MAP.experience}`}
             >
               <span className="text-foreground">{t("aboutExperience")}</span>
@@ -63,7 +63,7 @@ function AboutSection() {
             </Link>
             {t("aboutFocusedOn")}{" "}
             <Link
-              className="inline text-lg text-balance"
+              className="inline text-base text-balance sm:text-lg"
               href={`#${SECTION_ID_MAP.skills}`}
             >
               {t("aboutTsReact")} <Link.Icon className="align-middle" />
@@ -91,10 +91,10 @@ function ExperienceSection() {
 
   return (
     <section
-      className="mx-auto max-w-6xl space-y-10"
+      className="mx-auto max-w-6xl space-y-5 md:space-y-10"
       id={SECTION_ID_MAP.experience}
     >
-      <h2 className="text-center text-2xl tracking-wide uppercase">
+      <h2 className="text-center tracking-wide uppercase">
         {t("experienceTitle")}
       </h2>
 
@@ -115,7 +115,7 @@ function ExperienceSection() {
         />
       </Marquee>
 
-      <p className="text-center text-2xl font-medium text-foreground">
+      <p className="text-center text-xl font-medium text-foreground md:text-2xl">
         {t("testimonialsTitle")}
       </p>
 
@@ -158,10 +158,10 @@ function EducationSection() {
 
   return (
     <section
-      className="mx-auto max-w-3xl space-y-10"
+      className="mx-auto max-w-3xl space-y-5 md:space-y-10"
       id={SECTION_ID_MAP.education}
     >
-      <h2 className="text-center text-2xl tracking-wide uppercase">
+      <h2 className="text-center tracking-wide uppercase">
         {t("educationTitle")}
       </h2>
       <ul className="d-timeline d-timeline-vertical d-timeline-snap-icon max-md:d-timeline-compact">
@@ -174,9 +174,11 @@ function EducationSection() {
               height={40}
             />
           </div>
-          <div className="d-timeline-start md:mb-10 md:text-end">
+          <div className="d-timeline-start mb-5 md:mb-10 md:text-end">
             <time className="font-mono italic">{t("educationStartDate")}</time>
-            <h3 className="text-lg font-black">{t("educationStudiedAt")}</h3>
+            <h3 className="text-base font-black md:text-lg">
+              {t("educationStudiedAt")}
+            </h3>
             {t("educationFunixSoftware")}.
           </div>
           <hr className="bg-default" />
@@ -192,11 +194,13 @@ function EducationSection() {
               height={40}
             />
           </div>
-          <div className="d-timeline-end md:mb-10">
+          <div className="d-timeline-end mb-5 md:mb-10">
             <time className="font-mono italic">
               {t("educationBlockchainDate")}
             </time>
-            <h3 className="text-lg font-black">{t("educationStudiedAt")}</h3>
+            <h3 className="text-base font-black md:text-lg">
+              {t("educationStudiedAt")}
+            </h3>
             {t("educationFunixBlockchain")}.
           </div>
           <hr className="bg-default" />
@@ -216,7 +220,7 @@ function EducationSection() {
             <time className="font-mono italic">
               {t("educationGraduationDate")}
             </time>
-            <h3 className="text-lg font-black">
+            <h3 className="text-base font-black md:text-lg">
               {t("educationFunixGraduation")}
             </h3>
           </div>
@@ -232,10 +236,10 @@ function ContactSection() {
 
   return (
     <section
-      className="mx-auto max-w-xl space-y-10"
+      className="mx-auto max-w-xl space-y-5 md:space-y-10"
       id={SECTION_ID_MAP.contact}
     >
-      <h2 className="text-center text-2xl tracking-wide uppercase">
+      <h2 className="text-center tracking-wide uppercase">
         {t("contactTitle")}
       </h2>
 
