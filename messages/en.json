@@ -43,15 +43,15 @@
       "skillsCodebaseSuffix": " if you're curious."
     }
   },
+  "link": {
+    "about": "About",
+    "contact": "Contact",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experiences": "Experiences",
+    "education": "Education"
+  },
   "component": {
-    "NavLinks": {
-      "about": "About",
-      "contact": "Contact",
-      "projects": "Projects",
-      "skills": "Skills",
-      "experiences": "Experiences",
-      "education": "Education"
-    },
     "LanguageSwitcher": {
       "languageCode": {
         "en": "EN",
@@ -74,7 +74,7 @@
       "tooltipPrefix": "Press",
       "tooltipSuffix": "to switch theme"
     },
-    "PopoutMenu": {
+    "DropdownMenu": {
       "srOnly": "Pop-out menu",
       "keyboardShortcuts": "Keyboard Shortcuts"
     },

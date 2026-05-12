@@ -46,27 +46,23 @@
   }
 }
 
-@layer base {
-  h1 {
-    @apply text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl;
-  }
-  h2 {
-    @apply text-xl font-semibold tracking-tight text-foreground sm:text-2xl lg:text-3xl;
-  }
-  h3 {
-    @apply text-lg font-medium tracking-tight text-foreground sm:text-xl lg:text-2xl;
-  }
-  p {
-    @apply text-base text-balance text-muted sm:text-lg;
-  }
+h1 {
+  @apply text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl;
+}
+h2 {
+  @apply text-xl font-semibold tracking-tight text-foreground sm:text-2xl lg:text-3xl;
+}
+h3 {
+  @apply text-lg font-medium tracking-tight text-foreground sm:text-xl lg:text-2xl;
+}
+p {
+  @apply text-base text-balance text-muted sm:text-lg;
 }
 
-@layer utilities {
-  .glassmorphism {
-    @apply border border-solid border-foreground/25 bg-background/50 shadow-lg backdrop-blur;
-  }
+.glassmorphism {
+  @apply border border-solid border-foreground/25 bg-background/50 shadow-lg backdrop-blur;
+}
 
-  .orbiting-circles-container {
-    @apply relative flex flex-col items-center justify-center;
-  }
+.orbiting-circles-container {
+  @apply relative flex flex-col items-center justify-center;
 }

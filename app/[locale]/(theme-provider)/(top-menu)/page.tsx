@@ -42,7 +42,7 @@ function AboutSection() {
 
   return (
     <section
-      className="mx-auto mt-36 flex max-w-5xl flex-col items-center justify-center space-y-5 text-center md:flex-row md:text-left"
+      className="mx-auto mt-20 flex max-w-5xl flex-col items-center justify-center space-y-5 text-center md:mt-36 md:flex-row md:text-left"
       id={SECTION_ID_MAP.about}
     >
       <div className="space-y-5">

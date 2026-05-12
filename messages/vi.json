@@ -43,15 +43,15 @@
       "skillsCodebaseSuffix": "."
     }
   },
+  "link": {
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "projects": "Dự án",
+    "skills": "Kỹ năng",
+    "experiences": "Kinh nghiệm",
+    "education": "Học vấn"
+  },
   "component": {
-    "NavLinks": {
-      "about": "Giới thiệu",
-      "contact": "Liên hệ",
-      "projects": "Dự án",
-      "skills": "Kỹ năng",
-      "experiences": "Kinh nghiệm",
-      "education": "Học vấn"
-    },
     "LanguageSwitcher": {
       "languageCode": {
         "en": "EN",
@@ -74,7 +74,7 @@
       "tooltipPrefix": "Nhấn",
       "tooltipSuffix": "để chuyển màu giao diện"
     },
-    "PopoutMenu": {
+    "DropdownMenu": {
       "srOnly": "Menu bật lên",
       "keyboardShortcuts": "Phím tắt bàn phím"
     },

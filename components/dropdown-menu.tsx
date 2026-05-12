@@ -6,13 +6,20 @@ import { Button, Dropdown, Kbd } from "@heroui/react"
 import { MenuIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
 
-export function PopoutMenu({ children }: React.PropsWithChildren) {
+interface DropdownMenuProps {
+  buttonProps?: Omit<React.ComponentProps<typeof Button>, "children">
+}
+
+export function DropdownMenu({
+  children,
+  buttonProps,
+}: React.PropsWithChildren<DropdownMenuProps>) {
   const pathname = usePathname()
-  const t = useTranslations("component.PopoutMenu")
+  const t = useTranslations("component.DropdownMenu")
 
   return (
     <Dropdown>
-      <Button isIconOnly>
+      <Button isIconOnly {...buttonProps}>
         {children}
         <MenuIcon className="size-4" />
         <span className="sr-only">{t("srOnly")}</span>
