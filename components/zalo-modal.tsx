@@ -42,7 +42,7 @@ export function ZaloModal() {
               </Modal.Heading>
             </Modal.Header>
 
-            <Modal.Body>
+            <Modal.Body className="space-y-4">
               <p className="text-center text-sm! text-muted">
                 {t("description")}
               </p>
