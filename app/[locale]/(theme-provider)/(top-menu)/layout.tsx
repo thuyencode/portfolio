@@ -3,10 +3,8 @@ import { DropdownMenu } from "@/components/dropdown-menu"
 import { HashLink } from "@/components/hash-link"
 import { LocaleChanger } from "@/components/locale-changer"
 import { ThemeChanger } from "@/components/theme-changer"
-import { Link } from "@/i18n/navigation"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { ButtonGroup, ScrollShadow } from "@heroui/react"
-import { buttonVariants } from "@heroui/styles"
 import { useTranslations } from "next-intl"
 
 export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
@@ -28,9 +26,7 @@ export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
           <HashLink isButton href={`#${SECTION_ID_MAP.experience}`}>
             {t("experiences")}
           </HashLink>
-          <Link className={buttonVariants({ variant: "ghost" })} href="/">
-            {t("projects")}
-          </Link>
+
           <HashLink isButton href={`#${SECTION_ID_MAP.skills}`}>
             {t("skills")}
           </HashLink>

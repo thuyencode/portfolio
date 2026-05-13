@@ -1,6 +1,3 @@
-"use client"
-
-import { Link } from "@/i18n/navigation"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { Button, Drawer, drawerVariants } from "@heroui/react"
 import { MenuIcon } from "lucide-react"
@@ -41,9 +38,6 @@ export function DrawerMenu({
               <HashLink href={`#${SECTION_ID_MAP.experience}`}>
                 {t("experiences")}
               </HashLink>
-              <Link href="/" className="text-base font-medium">
-                {t("projects")}
-              </Link>
               <HashLink href={`#${SECTION_ID_MAP.skills}`}>
                 {t("skills")}
               </HashLink>
