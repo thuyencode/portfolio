@@ -1,15 +1,18 @@
 "use client"
 
-import { buttonVariants } from "@heroui/styles"
+import { buttonVariants, cn } from "@heroui/styles"
 import { useEffect, useState } from "react"
 
-interface HashLinkProps extends React.ComponentProps<"a"> {
+interface HashLinkProps extends Omit<React.ComponentProps<"a">, "className"> {
   href: `#${string}`
+  isButton?: boolean
+  className?: string
 }
 
 export function HashLink({
   href,
   children,
+  isButton = false,
   className,
   ...props
 }: HashLinkProps) {
@@ -39,10 +42,14 @@ export function HashLink({
   return (
     <a
       href={href}
-      className={buttonVariants({
-        variant: isActive ? "primary" : "ghost",
-        className,
-      })}
+      className={
+        isButton
+          ? buttonVariants({
+              variant: isActive ? "primary" : "ghost",
+              className,
+            })
+          : cn("text-base font-medium", className, { "text-accent": isActive })
+      }
       {...props}
     >
       {children}

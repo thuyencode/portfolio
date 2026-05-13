@@ -41,7 +41,7 @@ export function KeymapModal() {
                 <KeyboardIcon className="size-5" />
               </Modal.Icon>
 
-              <Modal.Heading>{t("title")}</Modal.Heading>
+              <Modal.Heading className="text-lg!">{t("title")}</Modal.Heading>
             </Modal.Header>
 
             <Modal.Body>

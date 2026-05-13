@@ -22,18 +22,22 @@ export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
         </div>
 
         <nav className="glassmorphism flex space-x-1 rounded-3xl px-4 py-2 max-md:hidden">
-          <HashLink href={`#${SECTION_ID_MAP.about}`}>{t("about")}</HashLink>
-          <HashLink href={`#${SECTION_ID_MAP.experience}`}>
+          <HashLink isButton href={`#${SECTION_ID_MAP.about}`}>
+            {t("about")}
+          </HashLink>
+          <HashLink isButton href={`#${SECTION_ID_MAP.experience}`}>
             {t("experiences")}
           </HashLink>
           <Link className={buttonVariants({ variant: "ghost" })} href="/">
             {t("projects")}
           </Link>
-          <HashLink href={`#${SECTION_ID_MAP.skills}`}>{t("skills")}</HashLink>
-          <HashLink href={`#${SECTION_ID_MAP.education}`}>
+          <HashLink isButton href={`#${SECTION_ID_MAP.skills}`}>
+            {t("skills")}
+          </HashLink>
+          <HashLink isButton href={`#${SECTION_ID_MAP.education}`}>
             {t("education")}
           </HashLink>
-          <HashLink href={`#${SECTION_ID_MAP.contact}`}>
+          <HashLink isButton href={`#${SECTION_ID_MAP.contact}`}>
             {t("contact")}
           </HashLink>
         </nav>

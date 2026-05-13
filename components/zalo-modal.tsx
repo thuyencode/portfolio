@@ -37,13 +37,13 @@ export function ZaloModal() {
             <Modal.CloseTrigger />
 
             <Modal.Header>
-              <Modal.Heading className="text-center">
+              <Modal.Heading className="text-center text-lg!">
                 {t("title")}
               </Modal.Heading>
             </Modal.Header>
 
             <Modal.Body>
-              <p className="text-center text-sm text-muted">
+              <p className="text-center text-sm! text-muted">
                 {t("description")}
               </p>
 

@@ -1,6 +1,8 @@
+"use client"
+
 import { Link } from "@/i18n/navigation"
 import { SECTION_ID_MAP } from "@/lib/constants"
-import { Button, buttonVariants, Drawer, drawerVariants } from "@heroui/react"
+import { Button, Drawer, drawerVariants } from "@heroui/react"
 import { MenuIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { HashLink } from "./hash-link"
@@ -30,7 +32,7 @@ export function DrawerMenu({
 
             <nav
               className={drawerVariants().body({
-                className: "flex flex-col gap-1",
+                className: "text flex flex-col gap-2",
               })}
             >
               <HashLink href={`#${SECTION_ID_MAP.about}`}>
@@ -39,7 +41,7 @@ export function DrawerMenu({
               <HashLink href={`#${SECTION_ID_MAP.experience}`}>
                 {t("experiences")}
               </HashLink>
-              <Link className={buttonVariants({ variant: "ghost" })} href="/">
+              <Link href="/" className="text-base font-medium">
                 {t("projects")}
               </Link>
               <HashLink href={`#${SECTION_ID_MAP.skills}`}>
