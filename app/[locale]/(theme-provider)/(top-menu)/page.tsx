@@ -236,7 +236,7 @@ function ContactSection() {
 
   return (
     <section
-      className="mx-auto max-w-xl space-y-5 md:space-y-10"
+      className="mx-auto mb-20 max-w-xl space-y-5 md:space-y-10"
       id={SECTION_ID_MAP.contact}
     >
       <h2 className="text-center tracking-wide uppercase">
