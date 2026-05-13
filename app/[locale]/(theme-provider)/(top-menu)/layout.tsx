@@ -45,11 +45,15 @@ export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
             <ButtonGroup.Separator />
           </ThemeChanger>
 
-          <DropdownMenu buttonProps={{ className: "max-md:hidden" }}>
+          <DropdownMenu
+            buttonProps={{ className: "max-md:hidden md:rounded-r-full" }}
+          >
             <ButtonGroup.Separator />
           </DropdownMenu>
 
-          <DrawerMenu buttonProps={{ className: "md:hidden" }}>
+          <DrawerMenu
+            buttonProps={{ className: "md:hidden max-md:rounded-r-full" }}
+          >
             <ButtonGroup.Separator />
           </DrawerMenu>
         </ButtonGroup>
