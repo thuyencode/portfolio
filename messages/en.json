@@ -40,7 +40,9 @@
       "educationStudiedAt": "Studied at FUNiX",
       "skillsCodebasePrefix": "I have my codebase on",
       "skillsCodebaseAnd": "and",
-      "skillsCodebaseSuffix": " if you're curious."
+      "skillsCodebaseSuffix": " if you're curious.",
+      "downloadCv": "Download CV",
+      "viewShortcuts": "View keyboard shortcuts"
     }
   },
   "link": {

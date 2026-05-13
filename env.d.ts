@@ -15,6 +15,8 @@ declare global {
       NEXT_PUBLIC_MY_ZALO_APP_URL: string
       NEXT_PUBLIC_MY_ZALO_QR_URL: string
       NEXT_PUBLIC_MY_LINKEDIN: string
+      NEXT_PUBLIC_MY_EN_CV: string
+      NEXT_PUBLIC_MY_VI_CV: string
 
       RESEND_API_KEY: string
       RESEND_EMAIL_FROM: string

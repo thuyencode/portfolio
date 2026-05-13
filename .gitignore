@@ -40,3 +40,6 @@ public/assets/avatar.*
 
 # Zalo QR image
 public/assets/contacts/zalo-qr.*
+
+# CVs
+public/assets/cv/*

@@ -18,6 +18,7 @@ import { SECTION_ID_MAP } from "@/lib/constants"
 import { Link } from "@heroui/react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
+import { AboutButtons } from "./about-buttons"
 import { SkillsSection } from "./skills.section"
 
 export default function HomePage() {
@@ -72,6 +73,8 @@ function AboutSection() {
           </span>
 
           <span>{t("aboutBackground")}</span>
+
+          <AboutButtons />
         </p>
       </div>
       <Image

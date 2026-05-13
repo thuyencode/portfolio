@@ -40,7 +40,9 @@
       "educationStudiedAt": "Học tại FUNiX",
       "skillsCodebasePrefix": "Mã nguồn của mình có trên",
       "skillsCodebaseAnd": "và",
-      "skillsCodebaseSuffix": "."
+      "skillsCodebaseSuffix": ".",
+      "downloadCv": "Tải xuống CV",
+      "viewShortcuts": "Xem các phím tắt"
     }
   },
   "link": {
