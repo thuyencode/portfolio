@@ -42,7 +42,7 @@ export function ContactForm() {
       className={surfaceVariants({ className: "space-y-5 rounded-3xl p-5" })}
     >
       <div className="flex flex-col gap-1">
-        <Label htmlFor="contact_email" className="text-base" isRequired>
+        <Label htmlFor="contact_email" className="md:text-base" isRequired>
           {t("emailLabel")}
         </Label>
         <Input
@@ -62,7 +62,7 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-1">
-        <Label htmlFor="contact_name" className="text-base">
+        <Label htmlFor="contact_name" className="md:text-base">
           {t("nameLabel")}
         </Label>
         <Input
@@ -81,7 +81,7 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-1">
-        <Label htmlFor="contact_subject" className="text-base">
+        <Label htmlFor="contact_subject" className="md:text-base">
           {t("subjectLabel")}{" "}
           <span className="text-muted">{t("subjectOptional")}</span>
         </Label>
@@ -102,7 +102,7 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-1">
-        <Label htmlFor="contact_message" className="text-base" isRequired>
+        <Label htmlFor="contact_message" className="md:text-base" isRequired>
           {t("messageLabel")}
         </Label>
         <TextArea

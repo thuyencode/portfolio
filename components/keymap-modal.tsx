@@ -32,7 +32,7 @@ export function KeymapModal() {
           removeFromRoute()
         }}
       >
-        <Modal.Container>
+        <Modal.Container placement="center">
           <Modal.Dialog className="w-xs">
             <Modal.CloseTrigger />
 

@@ -1,3 +1,4 @@
+import { AboutButtons } from "@/components/about-buttons"
 import { Blockquote } from "@/components/blockquote"
 import {
   Carousel,
@@ -18,7 +19,6 @@ import { SECTION_ID_MAP } from "@/lib/constants"
 import { Link } from "@heroui/react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
-import { AboutButtons } from "./about-buttons"
 import { SkillsSection } from "./skills.section"
 
 export default function HomePage() {
@@ -124,18 +124,6 @@ function ExperienceSection() {
 
       <Carousel>
         <CarouselContent>
-          <CarouselItem>
-            <Blockquote
-              author="Cosden Solutions"
-              testimonial={t("testimonialCosden")}
-              companyLogoProps={{
-                lightVariantSrc: `/assets/experiences/cosden_solutions_light_mode_no_text.png`,
-                darkVariantSrc: `/assets/experiences/cosden_solutions_dark_mode_no_text.png`,
-                alt: "Cosden Solutions",
-              }}
-            />
-          </CarouselItem>
-
           <CarouselItem>
             <Blockquote
               author="Cosden Solutions"

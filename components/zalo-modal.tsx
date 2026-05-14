@@ -32,7 +32,7 @@ export function ZaloModal() {
           }
         }}
       >
-        <Modal.Container>
+        <Modal.Container placement="center">
           <Modal.Dialog className="w-sm">
             <Modal.CloseTrigger />
 
