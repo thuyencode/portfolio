@@ -20,6 +20,8 @@ declare global {
 
       RESEND_API_KEY: string
       RESEND_EMAIL_FROM: string
+
+      DOMAIN: string
     }
   }
 }
