@@ -1,3 +1,5 @@
+import { routing } from "@/i18n/routing"
+import { type Locale } from "next-intl"
 import { getTranslations } from "next-intl/server"
 import { ImageResponse } from "next/og"
 
@@ -8,8 +10,14 @@ export const size = {
 
 export const contentType = "image/png"
 
-export default async function Image({ params }: LayoutProps<"/[locale]">) {
-  const { locale } = (await params) as { locale: "en" | "vi" }
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
+}
+
+export default async function OpengraphImage({
+  params,
+}: LayoutProps<"/[locale]">) {
+  const { locale } = (await params) as { locale: Locale }
   const t = await getTranslations({ locale, namespace: "page.Home" })
 
   return new ImageResponse(

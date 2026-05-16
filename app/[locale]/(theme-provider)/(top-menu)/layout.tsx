@@ -5,9 +5,18 @@ import { LocaleChanger } from "@/components/locale-changer"
 import { ThemeChanger } from "@/components/theme-changer"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { ButtonGroup, ScrollShadow } from "@heroui/react"
-import { useTranslations } from "next-intl"
+import { type Locale, useTranslations } from "next-intl"
+import { setRequestLocale } from "next-intl/server"
+import { Suspense, use } from "react"
 
-export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
+export default function TopMenuLayout({
+  children,
+  params,
+}: LayoutProps<"/[locale]">) {
+  const { locale } = use(params)
+
+  setRequestLocale(locale as Locale)
+
   const t = useTranslations("link")
 
   return (
@@ -39,7 +48,9 @@ export default function TopMenuLayout({ children }: LayoutProps<"/[locale]">) {
         </nav>
 
         <ButtonGroup className="flex flex-1 justify-end">
-          <LocaleChanger />
+          <Suspense fallback={null}>
+            <LocaleChanger />
+          </Suspense>
 
           <ThemeChanger>
             <ButtonGroup.Separator />

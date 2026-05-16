@@ -17,11 +17,17 @@ import { ZaloModal } from "@/components/zalo-modal"
 import { ZaloModalOpener } from "@/components/zalo-modal-opener"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { Link } from "@heroui/react"
-import { useTranslations } from "next-intl"
+import { useTranslations, type Locale } from "next-intl"
+import { setRequestLocale } from "next-intl/server"
 import Image from "next/image"
+import { Suspense, use } from "react"
 import { SkillsSection } from "./skills.section"
 
-export default function HomePage() {
+export default function HomePage({ params }: LayoutProps<"/[locale]">) {
+  const { locale } = use(params)
+
+  setRequestLocale(locale as Locale)
+
   return (
     <>
       <main className="space-y-28 px-4">
@@ -32,8 +38,12 @@ export default function HomePage() {
         <ContactSection />
       </main>
 
-      <KeymapModal />
-      <ZaloModal />
+      <Suspense fallback={null}>
+        <KeymapModal />
+      </Suspense>
+      <Suspense fallback={null}>
+        <ZaloModal />
+      </Suspense>
     </>
   )
 }
@@ -83,7 +93,8 @@ function AboutSection() {
         className="aspect-square rounded-3xl object-cover object-[0%_20%] shadow-lg"
         width={process.env.NEXT_PUBLIC_AVATAR_WIDTH}
         height={process.env.NEXT_PUBLIC_AVATAR_WIDTH}
-        loading="eager"
+        fetchPriority="high"
+        loading="lazy"
       />
     </section>
   )

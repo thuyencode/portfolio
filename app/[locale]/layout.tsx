@@ -7,6 +7,8 @@ import { Geist_Mono, Inter, Nunito_Sans } from "next/font/google"
 import { notFound } from "next/navigation"
 
 import { Metadata } from "next"
+import type { Locale } from "next-intl"
+import { Suspense } from "react"
 import "../globals.css"
 
 const nunitoSansHeading = Nunito_Sans({
@@ -28,15 +30,15 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: LayoutProps<"/[locale]">): Promise<Metadata> {
-  const { locale } = await (params as Promise<{
-    locale: (typeof routing.locales)[number]
-  }>)
+  const { locale } = (await params) as { locale: Locale }
+
   const t = await getTranslations({ locale, namespace: "page.Home" })
 
   return {
     title: `${t("name")} - ${t("jobTitle")}`,
     description: `${t("jobTitle")} ${t("aboutHas")} ${t("aboutExperience")}${t("aboutCollaboratingWith")}${t("aboutRealProjects")}${t("aboutFocusedOn")}${t("aboutTsReact")}.`,
     keywords: t.raw("keywords") as string[],
+    metadataBase: process.env.DOMAIN,
   }
 }
 
@@ -67,7 +69,9 @@ export default async function LocaleLayout({
     >
       <body className="relative bg-background">
         <NextIntlClientProvider>
-          <LocaleHotkey />
+          <Suspense fallback={null}>
+            <LocaleHotkey />
+          </Suspense>
           {children}
         </NextIntlClientProvider>
         <Background />
