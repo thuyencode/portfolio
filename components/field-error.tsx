@@ -1,6 +1,6 @@
 "use client"
 
-import { cn } from "@heroui/styles"
+import { cn } from "@heroui/react"
 import { useMemo } from "react"
 
 export function FieldError({

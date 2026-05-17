@@ -1,5 +1,4 @@
 import { cn } from "@heroui/react"
-import type * as React from "react"
 
 interface MarqueeProps extends React.ComponentPropsWithoutRef<"div"> {
   /**

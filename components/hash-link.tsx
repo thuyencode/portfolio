@@ -1,6 +1,6 @@
 "use client"
 
-import { buttonVariants, cn } from "@heroui/styles"
+import { buttonVariants, cn } from "@heroui/react"
 import { useEffect, useState } from "react"
 
 interface HashLinkProps extends Omit<React.ComponentProps<"a">, "className"> {
