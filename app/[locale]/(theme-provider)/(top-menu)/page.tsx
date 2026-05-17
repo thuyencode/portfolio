@@ -94,7 +94,7 @@ function AboutSection() {
         width={process.env.NEXT_PUBLIC_AVATAR_WIDTH}
         height={process.env.NEXT_PUBLIC_AVATAR_WIDTH}
         fetchPriority="high"
-        loading="lazy"
+        loading="eager"
       />
     </section>
   )

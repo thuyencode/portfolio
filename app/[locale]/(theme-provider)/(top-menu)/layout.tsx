@@ -1,7 +1,10 @@
 import { DrawerMenu } from "@/components/drawer-menu"
 import { DropdownMenu } from "@/components/dropdown-menu"
 import { HashLink } from "@/components/hash-link"
-import { LocaleChanger } from "@/components/locale-changer"
+import {
+  LocaleChanger,
+  LocaleChangerSkeleton,
+} from "@/components/locale-changer"
 import { ThemeChanger } from "@/components/theme-changer"
 import { SECTION_ID_MAP } from "@/lib/constants"
 import { ButtonGroup, ScrollShadow } from "@heroui/react"
@@ -48,7 +51,7 @@ export default function TopMenuLayout({
         </nav>
 
         <ButtonGroup className="flex flex-1 justify-end">
-          <Suspense fallback={null}>
+          <Suspense fallback={<LocaleChangerSkeleton />}>
             <LocaleChanger />
           </Suspense>
 

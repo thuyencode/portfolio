@@ -10,14 +10,10 @@ export function LocaleChanger() {
   const locale = useLocale()
   const switchLocale = useLocaleChanger()
 
-  function getButtonLabel() {
-    const flagEmoji = {
-      en: "🇬🇧",
-      vi: "🇻🇳",
-    }[locale]
-
-    return flagEmoji
-  }
+  const label = {
+    en: "🇬🇧",
+    vi: "🇻🇳",
+  }[locale]
 
   const switchToEnglish = () => switchLocale("en")
   const switchToVietnamese = () => switchLocale("vi")
@@ -26,7 +22,7 @@ export function LocaleChanger() {
     <Dropdown>
       <Tooltip delay={200}>
         <Button isIconOnly>
-          <span>{getButtonLabel()}</span>
+          <span>{label}</span>
           <span className="sr-only">{t(`languageCode.${locale}`)}</span>
         </Button>
 
@@ -53,5 +49,22 @@ export function LocaleChanger() {
         </Dropdown.Menu>
       </Dropdown.Popover>
     </Dropdown>
+  )
+}
+
+export function LocaleChangerSkeleton() {
+  const t = useTranslations("component.LanguageSwitcher")
+  const locale = useLocale()
+
+  const label = {
+    en: "🇬🇧",
+    vi: "🇻🇳",
+  }[locale]
+
+  return (
+    <Button isIconOnly>
+      <span>{label}</span>
+      <span className="sr-only">{t(`languageCode.${locale}`)}</span>
+    </Button>
   )
 }
