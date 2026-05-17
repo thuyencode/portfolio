@@ -178,7 +178,7 @@ function EducationSection() {
           </div>
           <div className="d-timeline-start mb-5 md:mb-10 md:text-end">
             <time className="font-mono italic">{t("educationStartDate")}</time>
-            <h3 className="text-base font-black md:text-lg">
+            <h3 className="text-base font-extrabold md:text-lg">
               {t("educationStudiedAt")}
             </h3>
             {t("educationFunixSoftware")}.
@@ -200,7 +200,7 @@ function EducationSection() {
             <time className="font-mono italic">
               {t("educationBlockchainDate")}
             </time>
-            <h3 className="text-base font-black md:text-lg">
+            <h3 className="text-base font-extrabold md:text-lg">
               {t("educationStudiedAt")}
             </h3>
             {t("educationFunixBlockchain")}.
@@ -222,7 +222,7 @@ function EducationSection() {
             <time className="font-mono italic">
               {t("educationGraduationDate")}
             </time>
-            <h3 className="text-base font-black md:text-lg">
+            <h3 className="text-base font-extrabold md:text-lg">
               {t("educationFunixGraduation")}
             </h3>
           </div>

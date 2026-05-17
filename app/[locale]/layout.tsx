@@ -5,21 +5,21 @@ import { Metadata } from "next"
 import type { Locale } from "next-intl"
 import { hasLocale, NextIntlClientProvider } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
-import { Geist_Mono, Inter, Nunito_Sans } from "next/font/google"
+import { Geist_Mono, Inter } from "next/font/google"
 import { notFound } from "next/navigation"
 import { Suspense } from "react"
 import "../globals.css"
 
-const nunitoSansHeading = Nunito_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-heading",
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700", "800"],
 })
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
+  weight: "400",
 })
 
 export function generateStaticParams() {
@@ -62,8 +62,7 @@ export default async function LocaleLayout({
         "antialiased",
         fontMono.variable,
         "font-sans",
-        inter.variable,
-        nunitoSansHeading.variable
+        inter.variable
       )}
     >
       <body className="relative bg-background">
