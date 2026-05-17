@@ -88,7 +88,7 @@ function AboutSection() {
         </p>
       </div>
       <Image
-        src={process.env.NEXT_PUBLIC_AVATAR_URL}
+        src={process.env.NEXT_PUBLIC_RELATIVE_AVATAR_URL}
         alt="A picture of myself"
         className="aspect-square rounded-3xl object-cover object-[0%_20%] shadow-lg"
         width={process.env.NEXT_PUBLIC_AVATAR_WIDTH}

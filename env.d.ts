@@ -6,6 +6,7 @@ declare global {
   namespace NodeJS {
     interface ProcessEnv {
       NEXT_PUBLIC_AVATAR_URL: string
+      NEXT_PUBLIC_RELATIVE_AVATAR_URL: string
       NEXT_PUBLIC_AVATAR_WIDTH: `${number}`
       NEXT_PUBLIC_AVATAR_HEIGHT: `${number}`
       NEXT_PUBLIC_MY_EMAIL: string
@@ -17,6 +18,7 @@ declare global {
       NEXT_PUBLIC_MY_LINKEDIN: string
       NEXT_PUBLIC_MY_EN_CV: string
       NEXT_PUBLIC_MY_VI_CV: string
+      NEXT_PUBLIC_OPENGRAPH_BG: string
 
       RESEND_API_KEY: string
       RESEND_EMAIL_FROM: string

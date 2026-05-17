@@ -29,7 +29,7 @@ export default async function OpengraphImage({
         alignItems: "center",
         justifyContent: "center",
         gap: 100,
-        backgroundImage: `url(${process.env.DOMAIN}/assets/backgrounds/opengraph.png)`,
+        backgroundImage: `url(${process.env.NEXT_PUBLIC_OPENGRAPH_BG})`,
         backgroundSize: "1200px 630px",
         color: "white",
       }}
@@ -64,7 +64,7 @@ export default async function OpengraphImage({
       </div>
 
       <img
-        src={`${process.env.DOMAIN}${process.env.NEXT_PUBLIC_AVATAR_URL}`}
+        src={process.env.NEXT_PUBLIC_AVATAR_URL}
         alt=""
         style={{
           width: 300,
