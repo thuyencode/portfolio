@@ -1,13 +1,12 @@
 import { LocaleHotkey } from "@/components/locale-hotkey"
 import { routing } from "@/i18n/routing"
-import { cn } from "@/lib/utils"
+import { cn } from "@heroui/react"
+import { Metadata } from "next"
+import type { Locale } from "next-intl"
 import { hasLocale, NextIntlClientProvider } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { Geist_Mono, Inter, Nunito_Sans } from "next/font/google"
 import { notFound } from "next/navigation"
-
-import { Metadata } from "next"
-import type { Locale } from "next-intl"
 import { Suspense } from "react"
 import "../globals.css"
 
